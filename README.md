@@ -34,6 +34,7 @@ Gnome may override some keys in some cases that existed in other levels that did
 You can clear these bindings with the help of dconf-editor.
 
 Steps:
+
 1. Install dconf-editor for your distro
 
 2. Open dconf-editor
