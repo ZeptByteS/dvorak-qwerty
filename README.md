@@ -10,7 +10,7 @@ any keys work as Qwerty when press with Control, Alt or Super.
 Installation
 ------
 
-# ./install.sh
+\#./install.sh
 
 It will save your xkb configuration in archive named xkb-backup.tar.gz located in your working directory and will install the new configuration files.
 
