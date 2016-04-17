@@ -611,302 +611,240 @@ partial alphanumeric_keys
 xkb_symbols "dvq-simplified" {
     name[group1]="English (Dvorak-Qwerty, simplified)";
 
-    key <TLDE> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, grave, asciitilde ],
-        actions[Group1]= [ RedirectKey(key=<I120>,clearmods=Lock) ]
-    };
-    key <AE01> {
-        type[group1]= "DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, 1, exclam ],
-        actions[Group1]= [ RedirectKey(key=<I126>,clearmods=Lock) ]
-    };
-    key <AE02> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, 2, at ],
-        actions[Group1]= [ RedirectKey(key=<I128>,clearmods=Lock) ]
-    };
-    key <AE03> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, 3, numbersign ],
-        actions[Group1]= [ RedirectKey(key=<I147>,clearmods=Lock) ]
-    };
-    key <AE04> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, 4, dollar ],
-        actions[Group1]= [ RedirectKey(key=<I148>,clearmods=Lock) ]
-    };
-    key <AE05> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, 5, percent ],
-        actions[Group1]= [ RedirectKey(key=<I149>,clearmods=Lock) ]
-    };
-    key <AE06> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, 6, asciicircum ],
-        actions[Group1]= [ RedirectKey(key=<I150>,clearmods=Lock) ]
-    };
-    key <AE07> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, 7, ampersand ],
-        actions[Group1]= [ RedirectKey(key=<I151>,clearmods=Lock) ]
-    };
-    key <AE08> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, 8, asterisk ],
-        actions[Group1]= [ RedirectKey(key=<I152>,clearmods=Lock) ]
-    };
-    key <AE09> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, 9, parenleft ],
-        actions[Group1]= [ RedirectKey(key=<I153>,clearmods=Lock) ]
-    };
-    key <AE10> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, 0, parenright ],
-        actions[Group1]= [ RedirectKey(key=<I154>,clearmods=Lock) ]
-    };
+    key <TLDE> { [       grave,  asciitilde ] };
+
+    key <AE01> { [           1,      exclam ] };
+    key <AE02> { [           2,          at ] };
+    key <AE03> { [           3,  numbersign ] };
+    key <AE04> { [           4,      dollar ] };
+    key <AE05> { [           5,     percent ] };
+    key <AE06> { [           6, asciicircum ] };
+    key <AE07> { [           7,   ampersand ] };
+    key <AE08> { [           8,    asterisk ] };
+    key <AE09> { [           9,   parenleft ] };
+    key <AE10> { [           0,  parenright ] };
     key <AE11> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, bracketleft, braceleft ],
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, minus, bracketleft, braceleft ],
         actions[Group1]= [ RedirectKey(key=<I155>,clearmods=Lock) ]
     };
     key <AE12> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, bracketright, braceright ],
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, equal, bracketright, braceright ],
         actions[Group1]= [ RedirectKey(key=<I156>,clearmods=Lock) ]
     };
 
 
     key <AD01> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, apostrophe, quotedbl ],
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, q, apostrophe, quotedbl ],
         actions[Group1]= [ RedirectKey(key=<I157>,clearmods=Lock) ]
     };
     key <AD02> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, comma, less ],
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, w, comma, less ],
         actions[Group1]= [ RedirectKey(key=<I158>,clearmods=Lock) ]
     };
     key <AD03> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, period, greater ],
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, e, period, greater ],
         actions[Group1]= [ RedirectKey(key=<I159>,clearmods=Lock) ]
     };
     key <AD04> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, p, P ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, r, P, NoSymbol, p ],
         actions[Group1]= [ RedirectKey(key=<I160>,clearmods=Lock) ]
     };
     key <AD05> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, y, Y ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, t, Y, NoSymbol, y ],
         actions[Group1]= [ RedirectKey(key=<I161>,clearmods=Lock) ]
     };
     key <AD06> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, f, F ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, y, F, NoSymbol, f ],
         actions[Group1]= [ RedirectKey(key=<I162>,clearmods=Lock) ]
     };
     key <AD07> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, g, G ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, u, G, NoSymbol, g ],
         actions[Group1]= [ RedirectKey(key=<I163>,clearmods=Lock) ]
     };
     key <AD08> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, c, C ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, i, C, NoSymbol, c ],
         actions[Group1]= [ RedirectKey(key=<I164>,clearmods=Lock) ]
     };
     key <AD09> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, r, R ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, o, R, NoSymbol, r ],
         actions[Group1]= [ RedirectKey(key=<I165>,clearmods=Lock) ]
     };
     key <AD10> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, l, L ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, p, L, NoSymbol, l ],
         actions[Group1]= [ RedirectKey(key=<I166>,clearmods=Lock) ]
     };
     key <AD11> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, slash, question ],
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, bracketleft, slash, question ],
         actions[Group1]= [ RedirectKey(key=<I167>,clearmods=Lock) ]
     };
     key <AD12> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, equal, plus ],
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, bracketright, equal, plus ],
         actions[Group1]= [ RedirectKey(key=<I168>,clearmods=Lock) ]
     };
 
 
     key <AC01> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, a, A ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, a, A, NoSymbol, a ],
         actions[Group1]= [ RedirectKey(key=<I178>,clearmods=Lock) ]
     };
     key <AC02> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, o, O ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, s, O, NoSymbol, o ],
         actions[Group1]= [ RedirectKey(key=<I179>,clearmods=Lock) ]
     };
     key <AC03> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, e, E ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, d, E, NoSymbol, e ],
         actions[Group1]= [ RedirectKey(key=<I180>,clearmods=Lock) ]
     };
     key <AC04> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, u, U ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, f, U, NoSymbol, u ],
         actions[Group1]= [ RedirectKey(key=<I181>,clearmods=Lock) ]
     };
     key <AC05> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, i, I ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, g, I, NoSymbol, i ],
         actions[Group1]= [ RedirectKey(key=<I182>,clearmods=Lock) ]
     };
     key <AC06> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, d, D ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, h, D, NoSymbol, d ],
         actions[Group1]= [ RedirectKey(key=<I183>,clearmods=Lock) ]
     };
     key <AC07> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, h, H ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, j, H, NoSymbol, h ],
         actions[Group1]= [ RedirectKey(key=<I184>,clearmods=Lock) ]
     };
     key <AC08> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, t, T ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, k, T, NoSymbol, t ],
         actions[Group1]= [ RedirectKey(key=<I185>,clearmods=Lock) ]
     };
     key <AC09> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, n, N ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, l, N, NoSymbol, n ],
         actions[Group1]= [ RedirectKey(key=<I186>,clearmods=Lock) ]
     };
     key <AC10> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, s, S ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, semicolon, S, NoSymbol, s ],
         actions[Group1]= [ RedirectKey(key=<I187>,clearmods=Lock) ]
     };
     key <AC11> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, minus, underscore ],
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, apostrophe, minus, underscore ],
         actions[Group1]= [ RedirectKey(key=<I188>,clearmods=Lock) ]
     };
 
 
     key <AB01> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, semicolon, colon ],
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, z, semicolon, colon ],
         actions[Group1]= [ RedirectKey(key=<I189>,clearmods=Lock) ]
     };
     key <AB02> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, q, Q ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, x, Q, NoSymbol, q ],
         actions[Group1]= [ RedirectKey(key=<I190>,clearmods=Lock) ]
     };
     key <AB03> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, j, J ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, c, J, NoSymbol, j ],
         actions[Group1]= [ RedirectKey(key=<I210>,clearmods=Lock) ]
     };
     key <AB04> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, k, K ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, v, K, NoSymbol, k ],
         actions[Group1]= [ RedirectKey(key=<I211>,clearmods=Lock) ]
     };
     key <AB05> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, x, X ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, b, X, NoSymbol, x ],
         actions[Group1]= [ RedirectKey(key=<I212>,clearmods=Lock) ]
     };
     key <AB06> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, b, B ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, n, B, NoSymbol, b ],
         actions[Group1]= [ RedirectKey(key=<I213>,clearmods=Lock) ]
     };
     key <AB07> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, m, M ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, m, M, NoSymbol, m ],
         actions[Group1]= [ RedirectKey(key=<I219>,clearmods=Lock) ]
     };
     key <AB08> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, w, W ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, comma, W, NoSymbol, w ],
         actions[Group1]= [ RedirectKey(key=<I220>,clearmods=Lock) ]
     };
     key <AB09> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, v, V ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, period, V, NoSymbol, v ],
         actions[Group1]= [ RedirectKey(key=<I221>,clearmods=Lock) ]
     };
     key <AB10> {
-        type[group1]="DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, z, Z ],
+        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+        symbols[Group1]= [ NoSymbol, slash, Z, NoSymbol, z ],
         actions[Group1]= [ RedirectKey(key=<I222>,clearmods=Lock) ]
     };
 
 
-    key <BKSL> {
-        type[group1]="DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC",
-        symbols[Group1]= [ NoSymbol, backslash, bar ],
-        actions[Group1]= [ RedirectKey(key=<I223>,clearmods=Lock) ]
-    };
+    key <I155> { [        minus,  underscore ] }; // <AE11>
+    key <I156> { [        equal,        plus ] }; // <AE12>
 
+    key <I157> { [            q,           Q ] }; // <AD01>
+    key <I158> { [            w,           W ] }; // <AD02>
+    key <I159> { [            e,           E ] }; // <AD03>
+    key <I160> { [            r,           R ] }; // <AD04>
+    key <I161> { [            t,           T ] }; // <AD05>
+    key <I162> { [            y,           Y ] }; // <AD06>
+    key <I163> { [            u,           U ] }; // <AD07>
+    key <I164> { [            i,           I ] }; // <AD08>
+    key <I165> { [            o,           O ] }; // <AD09>
+    key <I166> { [            p,           P ] }; // <AD10>
+    key <I167> { [  bracketleft,   braceleft ] }; // <AD11>
+    key <I168> { [ bracketright,  braceright ] }; // <AD12>
 
-    key <I120> { [        grave,  asciitilde ] };
-    key <I126> { [            1,      exclam ] };
-    key <I128> { [            2,          at ] };
-    key <I147> { [            3,  numbersign ] };
-    key <I148> { [            4,      dollar ] };
-    key <I149> { [            5,     percent ] };
-    key <I150> { [            6, asciicircum ] };
-    key <I151> { [            7,   ampersand ] };
-    key <I152> { [            8,    asterisk ] };
-    key <I153> { [            9,   parenleft ] };
-    key <I154> { [            0,  parenright ] };
-    key <I155> { [        minus,  underscore ] };
-    key <I156> { [        equal,        plus ] };
+    key <I178> { [            a,           A ] }; // <AC01>
+    key <I179> { [            s,           S ] }; // <AC02>
+    key <I180> { [            d,           D ] }; // <AC03>
+    key <I181> { [            f,           F ] }; // <AC04>
+    key <I182> { [            g,           G ] }; // <AC05>
+    key <I183> { [            h,           H ] }; // <AC06>
+    key <I184> { [            j,           J ] }; // <AC07>
+    key <I185> { [            k,           K ] }; // <AC08>
+    key <I186> { [            l,           L ] }; // <AC09>
+    key <I187> { [    semicolon,       colon ] }; // <AC10>
+    key <I188> { [   apostrophe,    quotedbl ] }; // <AC11>
 
-    key <I157> { [            q,           Q ] };
-    key <I158> { [            w,           W ] };
-    key <I159> { [            e,           E ] };
-    key <I160> { [            r,           R ] };
-    key <I161> { [            t,           T ] };
-    key <I162> { [            y,           Y ] };
-    key <I163> { [            u,           U ] };
-    key <I164> { [            i,           I ] };
-    key <I165> { [            o,           O ] };
-    key <I166> { [            p,           P ] };
-    key <I167> { [  bracketleft,   braceleft ] };
-    key <I168> { [ bracketright,  braceright ] };
+    key <I189> { [            z,           Z ] }; // <AB01>
+    key <I190> { [            x,           X ] }; // <AB02>
+    key <I210> { [            c,           C ] }; // <AB03>
+    key <I211> { [            v,           V ] }; // <AB04>
+    key <I212> { [            b,           B ] }; // <AB05>
+    key <I213> { [            n,           N ] }; // <AB06>
+    key <I219> { [            m,           M ] }; // <AB07>
+    key <I220> { [        comma,        less ] }; // <AB08>
+    key <I221> { [       period,     greater ] }; // <AB09>
+    key <I222> { [        slash,    question ] }; // <AB10>
 
-    key <I178> { [            a,           A ] };
-    key <I179> { [            s,           S ] };
-    key <I180> { [            d,           D ] };
-    key <I181> { [            f,           F ] };
-    key <I182> { [            g,           G ] };
-    key <I183> { [            h,           H ] };
-    key <I184> { [            j,           J ] };
-    key <I185> { [            k,           K ] };
-    key <I186> { [            l,           L ] };
-    key <I187> { [    semicolon,       colon ] };
-    key <I188> { [   apostrophe,    quotedbl ] };
-
-    key <I189> { [            z,           Z ] };
-    key <I190> { [            x,           X ] };
-    key <I210> { [            c,           C ] };
-    key <I211> { [            v,           V ] };
-    key <I212> { [            b,           B ] };
-    key <I213> { [            n,           N ] };
-    key <I219> { [            m,           M ] };
-    key <I220> { [        comma,        less ] };
-    key <I221> { [       period,     greater ] };
-    key <I222> { [        slash,    question ] };
-
-    key <I223> { [    backslash,         bar ] };
 };
 
 partial alphanumeric_keys
@@ -915,19 +853,193 @@ xkb_symbols "dvorak-qwerty" {
     name[Group1]= "English (Dvorak Qwerty)";
 
     include "us(dvq-simplified)"
-
-    key <TLDE> { [ NoSymbol,            grave,       asciitilde,       dead_grave,       dead_tilde ] };
-    key <AE06> { [ NoSymbol,                6,      asciicircum,  dead_circumflex,  dead_circumflex ] };
-    key <AE09> { [ NoSymbol,                9,        parenleft,       dead_grave ] };
-    key <AE12> { [ NoSymbol,     bracketright,       braceright,       dead_tilde ] };
-
-    key <AD01> { [ NoSymbol,       apostrophe,         quotedbl,       dead_acute,   dead_diaeresis ] };
-    key <AD02> { [ NoSymbol,            comma,             less,     dead_cedilla,       dead_caron ] };
-    key <AD03> { [ NoSymbol,           period,          greater,    dead_abovedot,   periodcentered ] };
-
-    key <AB01> { [ NoSymbol,        semicolon,            colon,      dead_ogonek, dead_doubleacute ] };
-
     include "level3(ralt_switch)"
+
+    replace key <TLDE> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, grave, asciitilde, dead_grave, dead_tilde ],
+        actions[Group1]= [ RedirectKey(key=<I120>,clearmods=Lock) ]
+    };
+    replace key <AE01> {
+        type[group1]= "DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, 1, exclam],
+        actions[Group1]= [ RedirectKey(key=<I126>,clearmods=Lock) ]
+    };
+    replace key <AE02> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, 2, at ],
+        actions[Group1]= [ RedirectKey(key=<I128>,clearmods=Lock) ]
+    };
+    replace key <AE03> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, 3, numbersign ],
+        actions[Group1]= [ RedirectKey(key=<I147>,clearmods=Lock) ]
+    };
+    replace key <AE04> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, 4, dollar ],
+        actions[Group1]= [ RedirectKey(key=<I148>,clearmods=Lock) ]
+    };
+    replace key <AE05> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, 5, percent ],
+        actions[Group1]= [ RedirectKey(key=<I149>,clearmods=Lock) ]
+    };
+    replace key <AE06> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, 6, asciicircum, dead_circumflex, dead_circumflex ],
+        actions[Group1]= [ RedirectKey(key=<I150>,clearmods=Lock) ]
+    };
+    replace key <AE07> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, 7, ampersand ],
+        actions[Group1]= [ RedirectKey(key=<I151>,clearmods=Lock) ]
+    };
+    replace key <AE08> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, 8, asterisk ],
+        actions[Group1]= [ RedirectKey(key=<I152>,clearmods=Lock) ]
+    };
+    replace key <AE09> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, 9, parenleft, dead_grave ],
+        actions[Group1]= [ RedirectKey(key=<I153>,clearmods=Lock) ]
+    };
+    replace key <AE10> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, 0, parenright ],
+        actions[Group1]= [ RedirectKey(key=<I154>,clearmods=Lock) ]
+    };
+    key <AE12> { [ NoSymbol, equal, bracketright, braceright,    dead_tilde ] };
+    key <AD01> { [ NoSymbol, q,       apostrophe,   quotedbl,    dead_acute,   dead_diaeresis ] };
+    key <AD02> { [ NoSymbol, w,            comma,       less,  dead_cedilla,       dead_caron ] };
+    key <AD03> { [ NoSymbol, e,           period,    greater, dead_abovedot,   periodcentered ] };
+    key <AB01> { [ NoSymbol, z,        semicolon,      colon,   dead_ogonek, dead_doubleacute ] };
+
+    key <AD04> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, r, p, P ]
+    };
+    key <AD05> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, t, y, Y ]
+    };
+    key <AD06> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, y, f, F ]
+    };
+    key <AD07> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, u, g, G ]
+    };
+    key <AD08> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, i, c, C ]
+    };
+    key <AD09> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, o, r, R ]
+    };
+    key <AD10> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, p, l, L ]
+    };
+
+
+    replace key <AC01> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, a, A ],
+        actions[Group1]= [ RedirectKey(key=<I178>,clearmods=Lock) ]
+    };
+    key <AC02> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, s, o, O ]
+    };
+    key <AC03> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, d, e, E ]
+    };
+    key <AC04> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, f, u, U ]
+    };
+    key <AC05> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, g, i, I ]
+    };
+    key <AC06> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, h, d, D ]
+    };
+    key <AC07> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, j, h, H ]
+    };
+    key <AC08> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, k, t, T ]
+    };
+    key <AC09> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, l, n, N ]
+    };
+    key <AC10> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, semicolon, s, S ]
+    };
+
+
+    key <AB02> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, x, q, Q ]
+    };
+    key <AB03> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, c, j, J ]
+    };
+    key <AB04> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, v, k, K ]
+    };
+    key <AB05> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, b, x, X ]
+    };
+    key <AB06> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, n, b, B ]
+    };
+    replace key <AB07> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol, m, M ],
+        actions[Group1]= [ RedirectKey(key=<I219>,clearmods=Lock) ]
+    };
+    key <AB08> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, comma, w, W ]
+    };
+    key <AB09> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, period, v, V ]
+    };
+    key <AB10> {
+        type[group1]="DVQ_ALPHABETIC",
+        symbols[Group1]= [ NoSymbol, slash, z, Z ]
+    };
+
+
+    key <I120> { [        grave,  asciitilde ] }; // <TLDE>
+
+    key <I126> { [            1,      exclam ] }; // <AE01>
+    key <I128> { [            2,          at ] }; // <AE02>
+    key <I147> { [            3,  numbersign ] }; // <AE03>
+    key <I148> { [            4,      dollar ] }; // <AE04>
+    key <I149> { [            5,     percent ] }; // <AE05>
+    key <I150> { [            6, asciicircum ] }; // <AE06>
+    key <I151> { [            7,   ampersand ] }; // <AE07>
+    key <I152> { [            8,    asterisk ] }; // <AE08>
+    key <I153> { [            9,   parenleft ] }; // <AE09>
+    key <I154> { [            0,  parenright ] }; // <AE10>
 
 };
 
@@ -936,54 +1048,52 @@ xkb_symbols "dvq-intl" {
 
     name[Group1]= "English (Dvorak-Qwerty, international with dead keys)";
 
-    include "us(dvq-simplified)"
-
-    key <TLDE> { [ NoSymbol,       dead_grave,       dead_tilde,                grave,           asciitilde ] };
-    key <AE01> { [ NoSymbol,                1,           exclam,           exclamdown,          onesuperior ] };
-    key <AE02> { [ NoSymbol,                2,               at,          twosuperior,     dead_doubleacute ] };
-    key <AE03> { [ NoSymbol,                3,       numbersign,        threesuperior,          dead_macron ] };
-    key <AE04> { [ NoSymbol,                4,           dollar,             currency,             sterling ] };
-    key <AE05> { [ NoSymbol,                5,          percent,             EuroSign,         dead_cedilla ] };
-    key <AE06> { [ NoSymbol,                6,  dead_circumflex,           onequarter,          asciicircum ] };
-    key <AE07> { [ NoSymbol,                7,        ampersand,              onehalf,            dead_horn ] };
-    key <AE08> { [ NoSymbol,                8,         asterisk,        threequarters,          dead_ogonek ] };
-    key <AE09> { [ NoSymbol,                9,        parenleft,  leftsinglequotemark,           dead_breve ] };
-    key <AE10> { [ NoSymbol,                0,       parenright, rightsinglequotemark,       dead_abovering ] };
-    key <AE11> { [ NoSymbol,      bracketleft,        braceleft,        guillemotleft,  leftdoublequotemark ] };
-    key <AE12> { [ NoSymbol,     bracketright,       braceright,       guillemotright, rightdoublequotemark ] };
-
-    key <AD01> { [ NoSymbol,       dead_acute,   dead_diaeresis,           apostrophe,             quotedbl ] };
-    key <AD02> { [ NoSymbol,            comma,             less,             ccedilla,             Ccedilla ], type[group1]="DVORAK_QWERTY_NONALPHABETIC_ALPHABETIC" };
-    key <AD03> { [ NoSymbol,           period,          greater,        dead_abovedot,           dead_caron ] };
-    key <AD04> { [ NoSymbol,                p,                P,           odiaeresis,           Odiaeresis ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AD05> { [ NoSymbol,                y,                Y,           udiaeresis,           Udiaeresis ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AD08> { [ NoSymbol,                c,                C,            copyright,                 cent ] };
-    key <AD09> { [ NoSymbol,                r,                R,           registered,           registered ] };
-    key <AD10> { [ NoSymbol,                l,                L,               oslash,             Ooblique ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AD11> { [ NoSymbol,            slash,         question,         questiondown,            dead_hook ] };
-    // key <AD12> { [ NoSymbol,        equal,            plus,             multiply,             division ] };
-
-    key <AC01> { [ NoSymbol,                a,                A,               aacute,               Aacute ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC02> { [ NoSymbol,                o,                O,               oacute,               Oacute ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC03> { [ NoSymbol,                e,                E,               eacute,               Eacute ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC04> { [ NoSymbol,                u,                U,               uacute,               Uacute ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC05> { [ NoSymbol,                i,                I,               iacute,               Iacute ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC06> { [ NoSymbol,                d,                D,                  eth,                  ETH ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC08> { [ NoSymbol,                t,                T,                thorn,                THORN ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC09> { [ NoSymbol,                n,                N,               ntilde,               Ntilde ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC10> { [ NoSymbol,                s,                S,               ssharp,              section ] };
-    // key <AC11> { [ NoSymbol,        minus,      underscore,                  yen,        dead_belowdot ] };
-
-    key <AB01> { [ NoSymbol,        semicolon,            colon,            paragraph,               degree ] };
-    key <AB02> { [ NoSymbol,                q,                Q,           adiaeresis,           Adiaeresis ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AB04> { [ NoSymbol,                k,                K,                   oe,                   OE ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AB07> { [ NoSymbol,                m,                M,                   mu,                   mu ] };
-    key <AB08> { [ NoSymbol,                w,                W,                aring,                Aring ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AB10> { [ NoSymbol,                z,                Z,                   ae,                   AE ], type[group1]="DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-
-    key <BKSL> { [ NoSymbol,        backslash,              bar,              notsign,            brokenbar ] };
-
+    include "us(dvorak-qwerty)"
     include "level3(ralt_switch)"
+
+    key <TLDE> { [ NoSymbol, NoSymbol,   dead_grave,      dead_tilde,                grave,           asciitilde ] };
+    key <AE01> { [ NoSymbol, NoSymbol,            1,          exclam,           exclamdown,          onesuperior ] };
+    key <AE02> { [ NoSymbol, NoSymbol,            2,              at,          twosuperior,     dead_doubleacute ] };
+    key <AE03> { [ NoSymbol, NoSymbol,            3,      numbersign,        threesuperior,          dead_macron ] };
+    key <AE04> { [ NoSymbol, NoSymbol,            4,          dollar,             currency,             sterling ] };
+    key <AE05> { [ NoSymbol, NoSymbol,            5,         percent,             EuroSign,         dead_cedilla ] };
+    key <AE06> { [ NoSymbol, NoSymbol,            6, dead_circumflex,           onequarter,          asciicircum ] };
+    key <AE07> { [ NoSymbol, NoSymbol,            7,       ampersand,              onehalf,            dead_horn ] };
+    key <AE08> { [ NoSymbol, NoSymbol,            8,        asterisk,        threequarters,          dead_ogonek ] };
+    key <AE09> { [ NoSymbol, NoSymbol,            9,       parenleft,  leftsinglequotemark,           dead_breve ] };
+    key <AE10> { [ NoSymbol, NoSymbol,            0,      parenright, rightsinglequotemark,       dead_abovering ] };
+    key <AE11> { [ NoSymbol, NoSymbol,  bracketleft,       braceleft,        guillemotleft,  leftdoublequotemark ] };
+    key <AE12> { [ NoSymbol, NoSymbol, bracketright,      braceright,       guillemotright, rightdoublequotemark ] };
+
+    key <AD01> { [ NoSymbol, NoSymbol, dead_acute, dead_diaeresis,    apostrophe,   quotedbl ] };
+    key <AD02> { [ NoSymbol, NoSymbol,      comma,           less,      ccedilla,   Ccedilla ], type[group1]="DVQ_NUM_ALPHABETIC" };
+    key <AD03> { [ NoSymbol, NoSymbol,     period,        greater, dead_abovedot, dead_caron ] };
+    key <AD04> { [ NoSymbol, NoSymbol,          p,              P,    odiaeresis, Odiaeresis ], type[group1]="DVQ_ALPHABETIC" };
+    key <AD05> { [ NoSymbol, NoSymbol,          y,              Y,    udiaeresis, Udiaeresis ], type[group1]="DVQ_ALPHABETIC" };
+    key <AD08> { [ NoSymbol, NoSymbol,          c,              C,     copyright,       cent ] };
+    key <AD09> { [ NoSymbol, NoSymbol,          r,              R,    registered, registered ] };
+    key <AD10> { [ NoSymbol, NoSymbol,          l,              L,        oslash,   Ooblique ], type[group1]="DVQ_ALPHABETIC" };
+    key <AD11> { [ NoSymbol, NoSymbol,      slash,       question,  questiondown,  dead_hook ] };
+
+    key <AC01> { [ NoSymbol, NoSymbol,          a,              A,        aacute,     Aacute ], type[group1]="DVQ_ALPHABETIC" };
+    key <AC02> { [ NoSymbol, NoSymbol,          o,              O,        oacute,     Oacute ], type[group1]="DVQ_ALPHABETIC" };
+    key <AC03> { [ NoSymbol, NoSymbol,          e,              E,        eacute,     Eacute ], type[group1]="DVQ_ALPHABETIC" };
+    key <AC04> { [ NoSymbol, NoSymbol,          u,              U,        uacute,     Uacute ], type[group1]="DVQ_ALPHABETIC" };
+    key <AC05> { [ NoSymbol, NoSymbol,          i,              I,        iacute,     Iacute ], type[group1]="DVQ_ALPHABETIC" };
+    key <AC06> { [ NoSymbol, NoSymbol,          d,              D,           eth,        ETH ], type[group1]="DVQ_ALPHABETIC" };
+    key <AC08> { [ NoSymbol, NoSymbol,          t,              T,         thorn,      THORN ], type[group1]="DVQ_ALPHABETIC" };
+    key <AC09> { [ NoSymbol, NoSymbol,          n,              N,        ntilde,     Ntilde ], type[group1]="DVQ_ALPHABETIC" };
+    key <AC10> { [ NoSymbol, NoSymbol,          s,              S,        ssharp,    section ] };
+
+    key <AB01> { [ NoSymbol, NoSymbol,  semicolon,          colon,     paragraph,     degree ] };
+    key <AB02> { [ NoSymbol, NoSymbol,          q,              Q,    adiaeresis, Adiaeresis ], type[group1]="DVQ_ALPHABETIC" };
+    key <AB04> { [ NoSymbol, NoSymbol,          k,              K,            oe,         OE ], type[group1]="DVQ_ALPHABETIC" };
+    key <AB07> { [ NoSymbol, NoSymbol,          m,              M,            mu,         mu ] };
+    key <AB08> { [ NoSymbol, NoSymbol,          w,              W,         aring,      Aring ], type[group1]="DVQ_ALPHABETIC" };
+    key <AB10> { [ NoSymbol, NoSymbol,          z,              Z,            ae,         AE ], type[group1]="DVQ_ALPHABETIC" };
+
+    key <BKSL> { [ backslash,        bar,       notsign,        brokenbar ] };
+
 
 };
 
@@ -992,114 +1102,118 @@ xkb_symbols "dvq-alt-intl" {
 
     name[group1]="English (Dvorak-Qwerty alternative international no dead keys)";
 
-    include "us(dvq-simplified)"
-
-    key <TLDE> { [ NoSymbol,            grave,       asciitilde,       dead_grave,       dead_tilde ] };
-    key <AE04> { [ NoSymbol,                4,           dollar,         EuroSign ] };
-    key <AE06> { [ NoSymbol,                6,      asciicircum,  dead_circumflex,  dead_circumflex ] };
-    key <AE09> { [ NoSymbol,                9,        parenleft,       dead_grave ] };
-    key <AE12> { [ NoSymbol,     bracketright,       braceright,       dead_tilde ] };
-
-    key <AD01> { [ NoSymbol,       apostrophe,         quotedbl,       dead_acute,   dead_diaeresis ] };
-    key <AD02> { [ NoSymbol,            comma,             less,       adiaeresis,       dead_caron,       Adiaeresis ], type[group1]= "DVQ_SIXLEVEL_NONALPHABETIC_NONALPHABETIC" };
-    key <AD03> { [ NoSymbol,           period,          greater,      ecircumflex,   periodcentered,      Ecircumflex ], type[group1]= "DVQ_SIXLEVEL_NONALPHABETIC_NONALPHABETIC" };
-    key <AD04> { [ NoSymbol,                p,                P,       ediaeresis,     dead_cedilla,       Ediaeresis ], type[group1]= "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC" };
-    key <AD05> { [ NoSymbol,                y,                Y,       udiaeresis,         NoSymbol,       Udiaeresis ], type[group1]= "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC" };
-    key <AD08> { [ NoSymbol,                c,                C,         ccedilla,    dead_abovedot,         Ccedilla ], type[group1]= "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC" };
-
-    key <AC01> { [ NoSymbol,                a,                A,           agrave,         NoSymbol,           Agrave ], type[group1]= "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC" };
-    key <AC02> { [ NoSymbol,                o,                O,      ocircumflex,         NoSymbol,      Ocircumflex ], type[group1]= "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC" };
-    key <AC03> { [ NoSymbol,                e,                E,           eacute,         NoSymbol,           Eacute ], type[group1]= "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC" };
-    key <AC04> { [ NoSymbol,                u,                U,      ucircumflex,         NoSymbol,      Ucircumflex ], type[group1]= "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC" };
-    key <AC05> { [ NoSymbol,                i,                I,      icircumflex,         NoSymbol,      Icircumflex ], type[group1]= "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC" };
-    key <AC10> { [ NoSymbol,                s,                S,           ssharp ] };
-
-    key <AB01> { [ NoSymbol,        semicolon,            colon,      acircumflex, dead_doubleacute,      Acircumflex ], type[group1]= "DVQ_SIXLEVEL_NONALPHABETIC_NONALPHABETIC" };
-    key <AB02> { [ NoSymbol,                q,                Q,       odiaeresis,      dead_ogonek,       Odiaeresis ], type[group1]= "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC" };
-    key <AB03> { [ NoSymbol,                j,                J,           egrave, dead_doubleacute,           Egrave ], type[group1]= "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC" };
-    key <AB04> { [ NoSymbol,                k,                K,           ugrave,         NoSymbol,           Ugrave ], type[group1]= "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC" };
-    key <AB05> { [ NoSymbol,                x,                X,       idiaeresis,         NoSymbol,       Idiaeresis ], type[group1]= "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC" };
-
+    include "us(dvorak-qwerty)"
     include "level3(ralt_switch)"
+
+    key <TLDE> { [ NoSymbol, NoSymbol,        grave,  asciitilde,      dead_grave,       dead_tilde ] };
+    key <AE04> { [ NoSymbol, NoSymbol,            4,      dollar,        EuroSign ] };
+    key <AE06> { [ NoSymbol, NoSymbol,            6, asciicircum, dead_circumflex,  dead_circumflex ] };
+    key <AE09> { [ NoSymbol, NoSymbol,            9,   parenleft,      dead_grave ] };
+    key <AE12> { [ NoSymbol, NoSymbol, bracketright,  braceright,      dead_tilde ] };
+    key <AD01> { [ NoSymbol, NoSymbol,   apostrophe,    quotedbl,      dead_acute,   dead_diaeresis ] };
+    key <AD02> { [ NoSymbol, NoSymbol,        comma,        less,      adiaeresis,       dead_caron,  Adiaeresis ], type[group1]= "DVQ_7LV_NUMERIC" };
+    key <AD03> { [ NoSymbol, NoSymbol,       period,     greater,     ecircumflex,   periodcentered, Ecircumflex ], type[group1]= "DVQ_7LV_NUMERIC" };
+    key <AD04> { [ NoSymbol, NoSymbol,            p,           P,      ediaeresis,     dead_cedilla,  Ediaeresis ], type[group1]= "DVQ_7LV_ALPHA_NUMERIC" };
+    key <AD05> { [ NoSymbol, NoSymbol,            y,           Y,      udiaeresis,         NoSymbol,  Udiaeresis ], type[group1]= "DVQ_7LV_ALPHA_NUMERIC" };
+    key <AD08> { [ NoSymbol, NoSymbol,            c,           C,        ccedilla,    dead_abovedot,    Ccedilla ], type[group1]= "DVQ_7LV_ALPHA_NUMERIC" };
+    key <AC01> { [ NoSymbol, NoSymbol,            a,           A,          agrave,         NoSymbol,      Agrave ], type[group1]= "DVQ_7LV_ALPHA_NUMERIC" };
+    key <AC02> { [ NoSymbol, NoSymbol,            o,           O,     ocircumflex,         NoSymbol, Ocircumflex ], type[group1]= "DVQ_7LV_ALPHA_NUMERIC" };
+    key <AC03> { [ NoSymbol, NoSymbol,            e,           E,          eacute,         NoSymbol,      Eacute ], type[group1]= "DVQ_7LV_ALPHA_NUMERIC" };
+    key <AC04> { [ NoSymbol, NoSymbol,            u,           U,     ucircumflex,         NoSymbol, Ucircumflex ], type[group1]= "DVQ_7LV_ALPHA_NUMERIC" };
+    key <AC05> { [ NoSymbol, NoSymbol,            i,           I,     icircumflex,         NoSymbol, Icircumflex ], type[group1]= "DVQ_7LV_ALPHA_NUMERIC" };
+    key <AC10> { [ NoSymbol, NoSymbol,            s,           S,          ssharp ] };
+    key <AB01> { [ NoSymbol, NoSymbol,    semicolon,       colon,     acircumflex, dead_doubleacute, Acircumflex ], type[group1]= "DVQ_7LV_NUMERIC" };
+    key <AB02> { [ NoSymbol, NoSymbol,            q,           Q,      odiaeresis,      dead_ogonek,  Odiaeresis ], type[group1]= "DVQ_7LV_ALPHA_NUMERIC" };
+    key <AB03> { [ NoSymbol, NoSymbol,            j,           J,          egrave, dead_doubleacute,      Egrave ], type[group1]= "DVQ_7LV_ALPHA_NUMERIC" };
+    key <AB04> { [ NoSymbol, NoSymbol,            k,           K,          ugrave,         NoSymbol,      Ugrave ], type[group1]= "DVQ_7LV_ALPHA_NUMERIC" };
+    key <AB05> { [ NoSymbol, NoSymbol,            x,           X,      idiaeresis,         NoSymbol,  Idiaeresis ], type[group1]= "DVQ_7LV_ALPHA_NUMERIC" };
+
 
 };
 
 partial alphanumeric_keys
 xkb_symbols "dvq-classic" {
 
-    include "us(dvq-simplified)"
+    include "us(dvorak-qwerty)"
+    include "level3(ralt_switch)"
 
     name[Group1]= "English (Dvorak-Qwerty, classic)";
 
-    key <TLDE> { [ NoSymbol,            grave,       asciitilde,       dead_grave,       dead_tilde ] };
-    key <AE01> { [ NoSymbol,      bracketleft,        braceleft ] };
-    key <AE02> { [ NoSymbol,                7,        ampersand ] };
-    key <AE03> { [ NoSymbol,                5,          percent ] };
-    key <AE04> { [ NoSymbol,                3,       numbersign ] };
-    key <AE05> { [ NoSymbol,                1,           exclam ] };
-    key <AE06> { [ NoSymbol,                9,        parenleft,       dead_grave ] };
-    key <AE07> { [ NoSymbol,                0,       parenright ] };
-    key <AE08> { [ NoSymbol,                2,               at ] };
-    key <AE09> { [ NoSymbol,                4,           dollar ] };
-    key <AE10> { [ NoSymbol,                6,      asciicircum,  dead_circumflex,  dead_circumflex ] };
-    key <AE11> { [ NoSymbol,                8,         asterisk ] };
-    key <AE12> { [ NoSymbol,     bracketright,       braceright,       dead_tilde ] };
+    key <TLDE> { [ NoSymbol, NoSymbol,        grave,  asciitilde,       dead_grave,       dead_tilde ] };
+    key <AE01> { [ NoSymbol, NoSymbol,  bracketleft,   braceleft ] };
+    key <AE02> { [ NoSymbol, NoSymbol,            7,   ampersand ] };
+    key <AE03> { [ NoSymbol, NoSymbol,            5,     percent ] };
+    key <AE04> { [ NoSymbol, NoSymbol,            3,  numbersign ] };
+    key <AE05> { [ NoSymbol, NoSymbol,            1,      exclam ] };
+    key <AE07> { [ NoSymbol, NoSymbol,            0,  parenright ] };
+    key <AE08> { [ NoSymbol, NoSymbol,            2,          at ] };
+    key <AE10> { [ NoSymbol, NoSymbol,            6, asciicircum,  dead_circumflex,  dead_circumflex ] };
+    key <AE11> { [ NoSymbol, NoSymbol,            8,    asterisk ] };
+    key <AE12> { [ NoSymbol, NoSymbol, bracketright,  braceright,       dead_tilde ] };
+    key <AD02> { [ NoSymbol, NoSymbol,        comma,        less,     dead_cedilla,       dead_caron ] };
+    key <AD03> { [ NoSymbol, NoSymbol,       period,     greater,    dead_abovedot,   periodcentered ] };
+    key <AD11> { [ NoSymbol, NoSymbol,   apostrophe,    quotedbl,       dead_acute,   dead_diaeresis ] };
+    key <AD12> { [ NoSymbol, NoSymbol,        equal,        plus ] };
+    key <AB01> { [ NoSymbol, NoSymbol,    semicolon,       colon,      dead_ogonek, dead_doubleacute ] };
 
-    key <AD01> { [ NoSymbol,            slash,         question ] };
-    key <AD02> { [ NoSymbol,            comma,             less,     dead_cedilla,       dead_caron ] };
-    key <AD03> { [ NoSymbol,           period,          greater,    dead_abovedot,   periodcentered ] };
-    key <AD11> { [ NoSymbol,       apostrophe,         quotedbl,       dead_acute,   dead_diaeresis ] };
-    key <AD12> { [ NoSymbol,            equal,             plus ] };
-
-    key <AB01> { [ NoSymbol,        semicolon,            colon,      dead_ogonek, dead_doubleacute ] };
-
-    include "level3(ralt_switch)"
-
+    replace key <AE06> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol,    9,   parenleft,       dead_grave ],
+        actions[Group1]= [ RedirectKey(key=<I150>,clearmods=Lock) ]
+    };
+    replace key <AE09> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, NoSymbol,    4,      dollar ],
+        actions[Group1]= [ RedirectKey(key=<I153>,clearmods=Lock) ]
+    };
+    replace key <AD01> {
+        type[group1]="DVQ_NUMERIC",
+        symbols[Group1]= [ NoSymbol, q,       slash,    question ],
+        actions[Group1]= [ RedirectKey(key=<I157>,clearmods=Lock) ]
+    };
 };
 
 partial alphanumeric_keys
 xkb_symbols "dvqp" {
 
-    include "us(dvq-simplified)"
+    include "us(dvorak-qwerty)"
+    include "level3(ralt_switch)"
 
     name[Group1]= "English (Dvorak-Qwerty, programmer)";
 
-    key <TLDE> { [ NoSymbol,           dollar,       asciitilde,       dead_tilde,       dead_tilde ] };
-    key <AE01> { [ NoSymbol,        ampersand,          percent ] };
-    key <AE02> { [ NoSymbol,      bracketleft,                7,         currency ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE03> { [ NoSymbol,        braceleft,                5,             cent ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE04> { [ NoSymbol,       braceright,                3,              yen ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE05> { [ NoSymbol,        parenleft,                1,         EuroSign ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE06> { [ NoSymbol,            equal,                9,         sterling,dead_circumflex ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE07> { [ NoSymbol,         asterisk,                0 ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE08> { [ NoSymbol,       parenright,                2,          onehalf ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE09> { [ NoSymbol,             plus,                4,       dead_grave ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE10> { [ NoSymbol,     bracketright,                6 ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE11> { [ NoSymbol,           exclam,                8,       exclamdown ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AE12> { [ NoSymbol,       numbersign,            grave,       dead_grave ] };
-
-    key <AD01> { [ NoSymbol,        semicolon,            colon,   dead_diaeresis,   dead_diaeresis ] };
-    key <AD02> { [ NoSymbol,            comma,             less,    guillemotleft,       dead_caron ] };
-    key <AD03> { [ NoSymbol,           period,          greater,   guillemotright,   periodcentered ] };
-    key <AD04> { [ NoSymbol,                p,                P,        paragraph,          section ] };
-    key <AD05> { [ NoSymbol,                y,                Y,       udiaeresis,       Udiaeresis ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AD08> { [ NoSymbol,                c,                C,         ccedilla,         Ccedilla ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AD09> { [ NoSymbol,                r,                R,       registered,        trademark ] };
-    key <AD11> { [ NoSymbol,            slash,         question,     questiondown ] };
-    key <AD12> { [ NoSymbol,               at,      asciicircum,  dead_circumflex,       dead_caron ] };
-
-    key <AC01> { [ NoSymbol,                a,                A,            aring,            Aring ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC02> { [ NoSymbol,                o,                O,           oslash,         Ooblique ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC03> { [ NoSymbol,                e,                E,               ae,               AE ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC04> { [ NoSymbol,                u,                U,           eacute,           Eacute ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC06> { [ NoSymbol,                d,                D,              eth,              ETH ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC07> { [ NoSymbol,                h,                H,       dead_acute ] };
-    key <AC08> { [ NoSymbol,                t,                T,            thorn,            THORN ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC09> { [ NoSymbol,                n,                N,           ntilde,           Ntilde ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-    key <AC10> { [ NoSymbol,                s,                S,           ssharp ] };
-    key <AC11> { [ NoSymbol,            minus,       underscore,           hyphen ], type[group1]= "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC" };
-
-    key <AB01> { [ NoSymbol,       apostrophe,         quotedbl,       dead_acute, dead_doubleacute ] };
+    key <TLDE> { [ NoSymbol, NoSymbol,       dollar,  asciitilde,       dead_tilde,       dead_tilde ] };
+    key <AE01> { [ NoSymbol, NoSymbol,    ampersand,     percent ] };
+    key <AE02> { [ NoSymbol, NoSymbol,  bracketleft,           7,         currency ],                   type[group1]= "DVQ_ALPHABETIC" };
+    key <AE03> { [ NoSymbol, NoSymbol,    braceleft,           5,             cent ],                   type[group1]= "DVQ_ALPHABETIC" };
+    key <AE04> { [ NoSymbol, NoSymbol,   braceright,           3,              yen ],                   type[group1]= "DVQ_ALPHABETIC" };
+    key <AE05> { [ NoSymbol, NoSymbol,    parenleft,           1,         EuroSign ],                   type[group1]= "DVQ_ALPHABETIC" };
+    key <AE06> { [ NoSymbol, NoSymbol,        equal,           9,         sterling,  dead_circumflex ], type[group1]= "DVQ_ALPHABETIC" };
+    key <AE07> { [ NoSymbol, NoSymbol,     asterisk,           0 ],                                     type[group1]= "DVQ_ALPHABETIC" };
+    key <AE08> { [ NoSymbol, NoSymbol,   parenright,           2,          onehalf ],                   type[group1]= "DVQ_ALPHABETIC" };
+    key <AE09> { [ NoSymbol, NoSymbol,         plus,           4,       dead_grave ],                   type[group1]= "DVQ_ALPHABETIC" };
+    key <AE10> { [ NoSymbol, NoSymbol, bracketright,           6 ],                                     type[group1]= "DVQ_ALPHABETIC" };
+    key <AE11> { [ NoSymbol, NoSymbol,       exclam,           8,       exclamdown ],                   type[group1]= "DVQ_ALPHABETIC" };
+    key <AE12> { [ NoSymbol, NoSymbol,   numbersign,       grave,       dead_grave ] };
+    key <AD01> { [ NoSymbol, NoSymbol,    semicolon,       colon,   dead_diaeresis,   dead_diaeresis ] };
+    key <AD02> { [ NoSymbol, NoSymbol,        comma,        less,    guillemotleft,       dead_caron ] };
+    key <AD03> { [ NoSymbol, NoSymbol,       period,     greater,   guillemotright,   periodcentered ] };
+    key <AD04> { [ NoSymbol, NoSymbol,            p,           P,        paragraph,          section ] };
+    key <AD05> { [ NoSymbol, NoSymbol,            y,           Y,       udiaeresis,       Udiaeresis ], type[group1]= "DVQ_ALPHABETIC" };
+    key <AD08> { [ NoSymbol, NoSymbol,            c,           C,         ccedilla,         Ccedilla ], type[group1]= "DVQ_ALPHABETIC" };
+    key <AD09> { [ NoSymbol, NoSymbol,            r,           R,       registered,        trademark ] };
+    key <AD11> { [ NoSymbol, NoSymbol,        slash,    question,     questiondown ] };
+    key <AD12> { [ NoSymbol, NoSymbol,           at, asciicircum,  dead_circumflex,       dead_caron ] };
+    key <AC01> { [ NoSymbol, NoSymbol,            a,           A,            aring,            Aring ], type[group1]= "DVQ_ALPHABETIC" };
+    key <AC02> { [ NoSymbol, NoSymbol,            o,           O,           oslash,         Ooblique ], type[group1]= "DVQ_ALPHABETIC" };
+    key <AC03> { [ NoSymbol, NoSymbol,            e,           E,               ae,               AE ], type[group1]= "DVQ_ALPHABETIC" };
+    key <AC04> { [ NoSymbol, NoSymbol,            u,           U,           eacute,           Eacute ], type[group1]= "DVQ_ALPHABETIC" };
+    key <AC06> { [ NoSymbol, NoSymbol,            d,           D,              eth,              ETH ], type[group1]= "DVQ_ALPHABETIC" };
+    key <AC07> { [ NoSymbol, NoSymbol,            h,           H,       dead_acute ] };
+    key <AC08> { [ NoSymbol, NoSymbol,            t,           T,            thorn,            THORN ], type[group1]= "DVQ_ALPHABETIC" };
+    key <AC09> { [ NoSymbol, NoSymbol,            n,           N,           ntilde,           Ntilde ], type[group1]= "DVQ_ALPHABETIC" };
+    key <AC10> { [ NoSymbol, NoSymbol,            s,           S,           ssharp ] };
+    key <AC11> { [ NoSymbol, NoSymbol,        minus,  underscore,           hyphen ],                   type[group1]= "DVQ_ALPHABETIC" };
+    key <AB01> { [ NoSymbol, NoSymbol,   apostrophe,    quotedbl,       dead_acute, dead_doubleacute ] };
 
     key <I126> { [            1,           1 ] };
     key <I128> { [            2,           2 ] };
@@ -1115,8 +1229,6 @@ xkb_symbols "dvqp" {
     key <I156> { [        equal,       equal ] };
     key <I167> { [  bracketleft, bracketleft ] };
     key <I168> { [ bracketright,bracketright ] };
-
-    include "level3(ralt_switch)"
 
 };
 
