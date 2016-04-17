@@ -1,6 +1,8 @@
 Dvorak Qwerty for Linux XKB configuration files
 ------
 
+![](https://github.com/ZeptByteS/dvorak-qwerty/blob/develop/dvorak-qwerty.png)
+
 These keymaps using first level to redirect to different scan-code in inet "evdev" section that won't used in ordinary keyboard. If your keyboard has some media keys and uses these scan-codes, you need change "what the scan-code redirect to" in symbols/us and uncomment the scan-code you need in symbols/inet.
 
 any keys work as Qwerty when press with Control, Alt or Super.
