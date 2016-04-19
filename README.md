@@ -3,6 +3,8 @@ Dvorak Qwerty for Linux XKB configuration files
 
 ![](https://github.com/ZeptByteS/dvorak-qwerty/blob/develop/dvorak-qwerty.png)
 
+These keymaps use the first level for redirection to different scan-codes in inet "evdev" section that aren't used in ordinary keyboards. However, if a keyboard has some media keys that use these scan-codes, you will have to change the redirection of the conflicting scan-codes in "symbols/us" and uncomment them in "symbols/inet".
+
 Any keys work as Qwerty when press with Control, Alt or Super.
 
 Installation
@@ -43,10 +45,10 @@ Steps:
 
 
 
-Issues with multimedia keyboard
+Change scan-codes
 ------
 
-This configuration need to override some multimedia keys listed below as Qwerty. If your keyboard has special keys, run xev command then press all multimedia keys to check what keys you need.
+To identifying key codes, run the following command then press all media keys
 
     $ xev | sed -n 's/^.*keycode *\([0-9]\+\) (keysym .*, \(.*\)),.*$/keycode \1 = \2/p'
     ...
@@ -59,7 +61,7 @@ This configuration need to override some multimedia keys listed below as Qwerty.
     keycode 192 = XF86Launch5
     ...
 
-Keys will be overrode:
+Keys using for redirection:
 
     key <HNGL> keycode 130 = Hangul
     key <HJCV> keycode 131 = Hangul_Hanja
@@ -108,7 +110,7 @@ Keys will be overrode:
     key <I252> keycode 252 = NoSymbol
     key <I253> keycode 253 = NoSymbol
 
-To change the key that use as Qwerty, for example key __\<I246\>__ keycode 246 = XF86WLAN:
+In case of, for example key __\<I246\>__ keycode 246 = XF86WLAN:
 
 Uncomment the line in __symbols/inet__ and comment out other key you don't need. For example key __\<HENK\>__.
 
