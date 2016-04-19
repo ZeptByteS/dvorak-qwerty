@@ -627,224 +627,183 @@ xkb_symbols "dvq-simplified" {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, minus, bracketleft, braceleft ],
         actions[Group1]= [ RedirectKey(key=<I159>,clearmods=Lock) ]
-    };
+    };key <I159> { [        minus,  underscore ] };
     key <AE12> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, equal, bracketright, braceright ],
         actions[Group1]= [ RedirectKey(key=<I160>,clearmods=Lock) ]
-    };
+    };key <I160> { [        equal,        plus ] };
 
 
     key <AD01> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, q, apostrophe, quotedbl ],
         actions[Group1]= [ RedirectKey(key=<I161>,clearmods=Lock) ]
-    };
+    };key <I161> { [            q,           Q ] };
     key <AD02> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, w, comma, less ],
         actions[Group1]= [ RedirectKey(key=<I162>,clearmods=Lock) ]
-    };
+    };key <I162> { [            w,           W ] };
     key <AD03> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, e, period, greater ],
         actions[Group1]= [ RedirectKey(key=<I168>,clearmods=Lock) ]
-    };
+    };key <I168> { [            e,           E ] };
     key <AD04> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, r, P, NoSymbol, p ],
         actions[Group1]= [ RedirectKey(key=<I170>,clearmods=Lock) ]
-    };
+    };key <I170> { [            r,           R ] };
     key <AD05> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, t, Y, NoSymbol, y ],
         actions[Group1]= [ RedirectKey(key=<I174>,clearmods=Lock) ]
-    };
+    };key <I174> { [            t,           T ] };
     key <AD06> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, y, F, NoSymbol, f ],
         actions[Group1]= [ RedirectKey(key=<I177>,clearmods=Lock) ]
-    };
+    };key <I177> { [            y,           Y ] };
     key <AD07> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, u, G, NoSymbol, g ],
         actions[Group1]= [ RedirectKey(key=<I178>,clearmods=Lock) ]
-    };
+    };key <I178> { [            u,           U ] };
     key <AD08> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, i, C, NoSymbol, c ],
         actions[Group1]= [ RedirectKey(key=<I183>,clearmods=Lock) ]
-    };
+    };key <I183> { [            i,           I ] };
     key <AD09> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, o, R, NoSymbol, r ],
         actions[Group1]= [ RedirectKey(key=<I184>,clearmods=Lock) ]
-    };
+    };key <I184> { [            o,           O ] };
     key <AD10> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, p, L, NoSymbol, l ],
         actions[Group1]= [ RedirectKey(key=<I185>,clearmods=Lock) ]
-    };
+    };key <I185> { [            p,           P ] };
     key <AD11> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, bracketleft, slash, question ],
         actions[Group1]= [ RedirectKey(key=<I186>,clearmods=Lock) ]
-    };
+    };key <I186> { [  bracketleft,   braceleft ] };
     key <AD12> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, bracketright, equal, plus ],
         actions[Group1]= [ RedirectKey(key=<I215>,clearmods=Lock) ]
-    };
+    };key <I215> { [ bracketright,  braceright ] };
 
 
     key <AC01> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, a, A, NoSymbol, a ],
         actions[Group1]= [ RedirectKey(key=<I217>,clearmods=Lock) ]
-    };
+    };key <I217> { [            a,           A ] };
     key <AC02> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, s, O, NoSymbol, o ],
         actions[Group1]= [ RedirectKey(key=<I219>,clearmods=Lock) ]
-    };
+    };key <I219> { [            s,           S ] };
     key <AC03> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, d, E, NoSymbol, e ],
         actions[Group1]= [ RedirectKey(key=<I220>,clearmods=Lock) ]
-    };
+    };key <I220> { [            d,           D ] };
     key <AC04> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, f, U, NoSymbol, u ],
         actions[Group1]= [ RedirectKey(key=<I221>,clearmods=Lock) ]
-    };
+    };key <I221> { [            f,           F ] };
     key <AC05> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, g, I, NoSymbol, i ],
         actions[Group1]= [ RedirectKey(key=<I222>,clearmods=Lock) ]
-    };
+    };key <I222> { [            g,           G ] };
     key <AC06> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, h, D, NoSymbol, d ],
         actions[Group1]= [ RedirectKey(key=<I224>,clearmods=Lock) ]
-    };
+    };key <I224> { [            h,           H ] };
     key <AC07> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, j, H, NoSymbol, h ],
         actions[Group1]= [ RedirectKey(key=<I226>,clearmods=Lock) ]
-    };
+    };key <I226> { [            j,           J ] };
     key <AC08> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, k, T, NoSymbol, t ],
         actions[Group1]= [ RedirectKey(key=<I227>,clearmods=Lock) ]
-    };
+    };key <I227> { [            k,           K ] };
     key <AC09> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, l, N, NoSymbol, n ],
         actions[Group1]= [ RedirectKey(key=<I228>,clearmods=Lock) ]
-    };
+    };key <I228> { [            l,           L ] };
     key <AC10> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, semicolon, S, NoSymbol, s ],
         actions[Group1]= [ RedirectKey(key=<I229>,clearmods=Lock) ]
-    };
+    };key <I229> { [    semicolon,       colon ] };
     key <AC11> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, apostrophe, minus, underscore ],
         actions[Group1]= [ RedirectKey(key=<I230>,clearmods=Lock) ]
-    };
+    };key <I230> { [   apostrophe,    quotedbl ] };
 
 
     key <AB01> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, z, semicolon, colon ],
         actions[Group1]= [ RedirectKey(key=<I231>,clearmods=Lock) ]
-    };
+    };key <I231> { [            z,           Z ] };
     key <AB02> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, x, Q, NoSymbol, q ],
         actions[Group1]= [ RedirectKey(key=<I234>,clearmods=Lock) ]
-    };
+    };key <I234> { [            x,           X ] };
     key <AB03> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, c, J, NoSymbol, j ],
         actions[Group1]= [ RedirectKey(key=<I235>,clearmods=Lock) ]
-    };
+    };key <I235> { [            c,           C ] };
     key <AB04> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, v, K, NoSymbol, k ],
         actions[Group1]= [ RedirectKey(key=<I245>,clearmods=Lock) ]
-    };
+    };key <I245> { [            v,           V ] };
     key <AB05> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, b, X, NoSymbol, x ],
         actions[Group1]= [ RedirectKey(key=<I246>,clearmods=Lock) ]
-    };
+    };key <I246> { [            b,           B ] };
     key <AB06> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, n, B, NoSymbol, b ],
         actions[Group1]= [ RedirectKey(key=<I249>,clearmods=Lock) ]
-    };
+    };key <I249> { [            n,           N ] };
     key <AB07> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, m, M, NoSymbol, m ],
         actions[Group1]= [ RedirectKey(key=<I250>,clearmods=Lock) ]
-    };
+    };key <I250> { [            m,           M ] };
     key <AB08> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, comma, W, NoSymbol, w ],
         actions[Group1]= [ RedirectKey(key=<I251>,clearmods=Lock) ]
-    };
+    };key <I251> { [        comma,        less ] };
     key <AB09> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, period, V, NoSymbol, v ],
         actions[Group1]= [ RedirectKey(key=<I252>,clearmods=Lock) ]
-    };
+    };key <I252> { [       period,     greater ] };
     key <AB10> {
         type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
         symbols[Group1]= [ NoSymbol, slash, Z, NoSymbol, z ],
         actions[Group1]= [ RedirectKey(key=<I253>,clearmods=Lock) ]
-    };
-
-
-    key <I159> { [        minus,  underscore ] }; // <AE11>
-    key <I160> { [        equal,        plus ] }; // <AE12>
-
-    key <I161> { [            q,           Q ] }; // <AD01>
-    key <I162> { [            w,           W ] }; // <AD02>
-    key <I168> { [            e,           E ] }; // <AD03>
-    key <I170> { [            r,           R ] }; // <AD04>
-    key <I174> { [            t,           T ] }; // <AD05>
-    key <I177> { [            y,           Y ] }; // <AD06>
-    key <I178> { [            u,           U ] }; // <AD07>
-    key <I183> { [            i,           I ] }; // <AD08>
-    key <I184> { [            o,           O ] }; // <AD09>
-    key <I185> { [            p,           P ] }; // <AD10>
-    key <I186> { [  bracketleft,   braceleft ] }; // <AD11>
-    key <I215> { [ bracketright,  braceright ] }; // <AD12>
-
-    key <I217> { [            a,           A ] }; // <AC01>
-    key <I219> { [            s,           S ] }; // <AC02>
-    key <I220> { [            d,           D ] }; // <AC03>
-    key <I221> { [            f,           F ] }; // <AC04>
-    key <I222> { [            g,           G ] }; // <AC05>
-    key <I224> { [            h,           H ] }; // <AC06>
-    key <I226> { [            j,           J ] }; // <AC07>
-    key <I227> { [            k,           K ] }; // <AC08>
-    key <I228> { [            l,           L ] }; // <AC09>
-    key <I229> { [    semicolon,       colon ] }; // <AC10>
-    key <I230> { [   apostrophe,    quotedbl ] }; // <AC11>
-
-    key <I231> { [            z,           Z ] }; // <AB01>
-    key <I234> { [            x,           X ] }; // <AB02>
-    key <I235> { [            c,           C ] }; // <AB03>
-    key <I245> { [            v,           V ] }; // <AB04>
-    key <I246> { [            b,           B ] }; // <AB05>
-    key <I249> { [            n,           N ] }; // <AB06>
-    key <I250> { [            m,           M ] }; // <AB07>
-    key <I251> { [        comma,        less ] }; // <AB08>
-    key <I252> { [       period,     greater ] }; // <AB09>
-    key <I253> { [        slash,    question ] }; // <AB10>
-
+    };key <I253> { [        slash,    question ] };
 };
 
 partial alphanumeric_keys
@@ -859,63 +818,63 @@ xkb_symbols "dvorak-qwerty" {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, NoSymbol, grave, asciitilde, dead_grave, dead_tilde ],
         actions[Group1]= [ RedirectKey(key=<HNGL>,clearmods=Lock) ]
-    };
+    };key <HNGL> { [        grave,  asciitilde ] };
     replace key <AE01> {
         type[group1]= "DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, NoSymbol, 1, exclam],
         actions[Group1]= [ RedirectKey(key=<HJCV>,clearmods=Lock) ]
-    };
+    };key <HJCV> { [            1,      exclam ] };
     replace key <AE02> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, NoSymbol, 2, at ],
         actions[Group1]= [ RedirectKey(key=<LNFD>,clearmods=Lock) ]
-    };
+    };key <LNFD> { [            2,          at ] };
     replace key <AE03> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, NoSymbol, 3, numbersign ],
         actions[Group1]= [ RedirectKey(key=<PROP>,clearmods=Lock) ]
-    };
+    };key <PROP> { [            3,  numbersign ] };
     replace key <AE04> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, NoSymbol, 4, dollar ],
         actions[Group1]= [ RedirectKey(key=<FRNT>,clearmods=Lock) ]
-    };
+    };key <FRNT> { [            4,      dollar ] };
     replace key <AE05> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, NoSymbol, 5, percent ],
         actions[Group1]= [ RedirectKey(key=<I120>,clearmods=Lock) ]
-    };
+    };key <I120> { [            5,     percent ] };
     replace key <AE06> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, NoSymbol, 6, asciicircum, dead_circumflex, dead_circumflex ],
         actions[Group1]= [ RedirectKey(key=<I128>,clearmods=Lock) ]
-    };
+    };key <I128> { [            6, asciicircum ] };
     replace key <AE07> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, NoSymbol, 7, ampersand ],
         actions[Group1]= [ RedirectKey(key=<I147>,clearmods=Lock) ]
-    };
+    };key <I147> { [            7,   ampersand ] };
     replace key <AE08> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, NoSymbol, 8, asterisk ],
         actions[Group1]= [ RedirectKey(key=<I149>,clearmods=Lock) ]
-    };
+    };key <I149> { [            8,    asterisk ] };
     replace key <AE09> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, NoSymbol, 9, parenleft, dead_grave ],
         actions[Group1]= [ RedirectKey(key=<I154>,clearmods=Lock) ]
-    };
+    };key <I154> { [            9,   parenleft ] };
     replace key <AE10> {
         type[group1]="DVQ_NUMERIC",
         symbols[Group1]= [ NoSymbol, NoSymbol, 0, parenright ],
         actions[Group1]= [ RedirectKey(key=<I155>,clearmods=Lock) ]
-    };
+    };key <I155> { [            0,  parenright ] };
     key <AE12> { [ NoSymbol, equal, bracketright, braceright,    dead_tilde ] };
+
+
     key <AD01> { [ NoSymbol, q,       apostrophe,   quotedbl,    dead_acute,   dead_diaeresis ] };
     key <AD02> { [ NoSymbol, w,            comma,       less,  dead_cedilla,       dead_caron ] };
     key <AD03> { [ NoSymbol, e,           period,    greater, dead_abovedot,   periodcentered ] };
-    key <AB01> { [ NoSymbol, z,        semicolon,      colon,   dead_ogonek, dead_doubleacute ] };
-
     key <AD04> {
         type[group1]="DVQ_ALPHABETIC",
         symbols[Group1]= [ NoSymbol, r, p, P ]
@@ -989,6 +948,7 @@ xkb_symbols "dvorak-qwerty" {
     };
 
 
+    key <AB01> { [ NoSymbol, z,        semicolon,      colon,   dead_ogonek, dead_doubleacute ] };
     key <AB02> {
         type[group1]="DVQ_ALPHABETIC",
         symbols[Group1]= [ NoSymbol, x, q, Q ]
@@ -1026,21 +986,6 @@ xkb_symbols "dvorak-qwerty" {
         type[group1]="DVQ_ALPHABETIC",
         symbols[Group1]= [ NoSymbol, slash, z, Z ]
     };
-
-
-    key <HNGL> { [        grave,  asciitilde ] }; // <TLDE>
-
-    key <HJCV> { [            1,      exclam ] }; // <AE01>
-    key <LNFD> { [            2,          at ] }; // <AE02>
-    key <PROP> { [            3,  numbersign ] }; // <AE03>
-    key <FRNT> { [            4,      dollar ] }; // <AE04>
-    key <I120> { [            5,     percent ] }; // <AE05>
-    key <I128> { [            6, asciicircum ] }; // <AE06>
-    key <I147> { [            7,   ampersand ] }; // <AE07>
-    key <I149> { [            8,    asterisk ] }; // <AE08>
-    key <I154> { [            9,   parenleft ] }; // <AE09>
-    key <I155> { [            0,  parenright ] }; // <AE10>
-
 };
 
 partial alphanumeric_keys
