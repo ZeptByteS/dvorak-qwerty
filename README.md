@@ -122,6 +122,7 @@ Uncomment the line in __symbols/inet__ and comment out other key you don't need.
     // key <HENK>   {      [ Henkan                ]       };
     key <MUHE>   {      [ Muhenkan              ]       };
     key <KATA>   {      [ Katakana              ]       };
+    ...
 
 Search keyname __\<I246\>__ in __symbols/us__ and replace it with __\<HENK\>__.
 
