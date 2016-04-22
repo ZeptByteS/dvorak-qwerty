@@ -114,24 +114,26 @@ E.g for key __\<I246\>__ keycode 246 = XF86WLAN:
 
 Uncomment the line in __symbols/inet__ and comment out other key you don't need. For example key __\<HENK\>__.
 
-    ...
-    // key <I235>   {      [ XF86Display           ]       };
-    // key <I245>   {      [ XF86Bluetooth         ]       };
-    key <I246>   {      [ XF86WLAN              ]       };
-    // key <I249>   {      [ ]       }; // KEY_VIDEO_NEXT  --  drive next video source
-    ...
-    key <HKTG>   {      [ Hiragana_Katakana     ]       };
-    // key <HENK>   {      [ Henkan                ]       };
-    key <MUHE>   {      [ Muhenkan              ]       };
-    key <KATA>   {      [ Katakana              ]       };
-    ...
+```c++
+...
+// key <I235>   {      [ XF86Display           ]       };
+// key <I245>   {      [ XF86Bluetooth         ]       };
+key <I246>   {      [ XF86WLAN              ]       };
+// key <I249>   {      [ ]       }; // KEY_VIDEO_NEXT  --  drive next video source
+...
+key <HKTG>   {      [ Hiragana_Katakana     ]       };
+// key <HENK>   {      [ Henkan                ]       };
+key <MUHE>   {      [ Muhenkan              ]       };
+key <KATA>   {      [ Katakana              ]       };
+...
+```
 
 Search keyname __\<I246\>__ in __symbols/us__ and replace it with __\<HENK\>__.
 
-    ...
-    key <AB05> {
-        type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
-        symbols[Group1]= [ NoSymbol, b, X, NoSymbol, x ],
-        actions[Group1]= [ RedirectKey(key=<HENK>,clearmods=Lock) ]
-    };key <HENK> { [            b,           B ] };
-    ...
+```c++
+key <AB05> {
+type[group1]="DVQ-SIMPLIFIED_ALPHA_NUMERIC",
+symbols[Group1]= [ NoSymbol, b, X, NoSymbol, x ],
+actions[Group1]= [ RedirectKey(key=<HENK>,clearmods=Lock) ]
+};key <HENK> { [            b,           B ] };
+```
