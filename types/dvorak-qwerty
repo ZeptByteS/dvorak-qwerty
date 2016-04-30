@@ -1,107 +1,128 @@
 partial default xkb_types "default" {
     virtual_modifiers LevelThree,Control,Alt,Super;
 
-    type "DVORAK_QWERTY_ALPHABETIC_ALPHABETIC"{
+    type "DVQ-SIMPLIFIED_ALPHA_NUMERIC"{
         modifiers= None+Shift+Lock+LevelThree+Control+Alt+Super;
-        map[None]= level2;
+        map[None]= level5;
         map[Shift]= level3;
         map[Lock]= level3;
-        map[Shift+Lock]= level2;
-        map[LevelThree]= level4;
-        map[Shift+LevelThree]= level5;
-        map[LevelThree+Lock]= level5;
-        map[Shift+LevelThree+Lock]= level4;
-        level_name[Level1]= "Modifier";
-        level_name[Level2]= "Base";
-        level_name[Level3]= "Shift";
-        level_name[level4]= "LevelThree";
-        level_name[level5]= "LevelThree Shift";
-    };
-
-    type "DVORAK_QWERTY_NONALPHABETIC_NONALPHABETIC"{
-        modifiers= None+Shift+Lock+LevelThree+Control+Alt+Super;
-        map[None]= level2;
-        map[Shift]= level3;
-        map[Lock]= level2;
-        map[Shift+Lock]= level3;
-        map[LevelThree]= level4;
-        map[Shift+LevelThree]= level5;
-        map[LevelThree+Lock]= level4;
-        map[Shift+LevelThree+Lock]= level5;
-        level_name[Level1]= "Modifier";
-        level_name[Level2]= "Base";
-        level_name[Level3]= "Shift";
-        level_name[level4]= "LevelThree";
-        level_name[level5]= "LevelThree Shift";
-    };
-
-    type "DVORAK_QWERTY_ALPHABETIC_NONALPHABETIC"{
-        modifiers= None+Shift+Lock+LevelThree+Control+Alt+Super;
-        map[None]= level2;
-        map[Shift]= level3;
-        map[Lock]= level3;
-        map[Shift+Lock]= level2;
-        map[LevelThree]= level4;
-        map[Shift+LevelThree]= level5;
-        map[LevelThree+Lock]= level4;
-        map[Shift+LevelThree+Lock]= level5;
-        level_name[Level1]= "Modifier";
-        level_name[Level2]= "Base";
-        level_name[Level3]= "Shift";
-        level_name[level4]= "LevelThree";
-        level_name[level5]= "LevelThree Shift";
-    };
-
-    type "DVORAK_QWERTY_NONALPHABETIC_ALPHABETIC"{
-        modifiers= None+Shift+Lock+LevelThree+Control+Alt+Super;
-        map[None]= level2;
-        map[Shift]= level3;
-        map[Lock]= level2;
-        map[Shift+Lock]= level3;
-        map[LevelThree]= level4;
-        map[Shift+LevelThree]= level5;
-        map[LevelThree+Lock]= level5;
-        map[Shift+LevelThree+Lock]= level4;
-        level_name[Level1]= "Modifier";
-        level_name[Level2]= "Base";
-        level_name[Level3]= "Shift";
-        level_name[level4]= "LevelThree";
-        level_name[level5]= "LevelThree Shift";
-    };
-
-    type "DVQ_SIXLEVEL_ALPHABETIC_NONALPHABETIC"{
-        modifiers= None+Shift+Lock+LevelThree+Control+Alt+Super;
-        map[None]= level2;
-        map[Shift]= level3;
-        map[Lock]= level3;
-        map[Shift+Lock]= level2;
-        map[LevelThree]= level4;
-        map[Shift+LevelThree]= level5;
-        map[Shift+LevelThree+Lock]= level5;
+        map[Shift+Lock]= level5;
+        map[LevelThree]= level6;
+        map[Shift+LevelThree]= level7;
         map[LevelThree+Lock]= level6;
+        map[Shift+LevelThree+Lock]= level7;
         level_name[Level1]= "Modifier";
-        level_name[Level2]= "Base";
-        level_name[Level3]= "Shift";
-        level_name[level4]= "LevelThree";
-        level_name[level5]= "LevelThree Shift";
-        level_name[level6]= "LevelThree Lock";
+        level_name[Level2]= "Qwerty";
+        level_name[Level3]= "Shift or Lock";
+        level_name[level4]= "NoSymbol";
+        level_name[Level5]= "Base or Shift+Lock";
+        level_name[level6]= "LevelThree or LevelThree+Lock";
+        level_name[level7]= "LevelThree+Shift or LevelThree+Shift+Lock";
     };
 
-    type "DVQ_SIXLEVEL_NONALPHABETIC_NONALPHABETIC"{
+    type "DVQ_ALPHABETIC"{
         modifiers= None+Shift+Lock+LevelThree+Control+Alt+Super;
-        map[None]= level2;
-        map[Shift]= level3;
-        map[Lock]= level2;
+        map[None]= level3;
+        map[Shift]= level4;
+        map[Lock]= level4;
         map[Shift+Lock]= level3;
-        map[LevelThree]= level4;
-        map[Shift+LevelThree]= level5;
-        map[Shift+LevelThree+Lock]= level5;
+        map[LevelThree]= level5;
+        map[Shift+LevelThree]= level6;
         map[LevelThree+Lock]= level6;
+        map[Shift+LevelThree+Lock]= level5;
         level_name[Level1]= "Modifier";
-        level_name[Level2]= "Base";
-        level_name[Level3]= "Shift";
-        level_name[level4]= "LevelThree";
-        level_name[level5]= "LevelThree Shift";
-        level_name[level6]= "LevelThree Lock";
+        level_name[Level2]= "Qwerty";
+        level_name[Level3]= "Base or Shift+Lock";
+        level_name[Level4]= "Shift or Lock";
+        level_name[level5]= "LevelThree or LevelThree+Shift+Lock";
+        level_name[level6]= "LevelThree+Shift or LevelThree+Lock";
+    };
+
+    type "DVQ_NUMERIC"{
+        modifiers= None+Shift+LevelThree+Control+Alt+Super;
+        map[None]= level3;
+        map[Shift]= level4;
+        map[LevelThree]= level5;
+        map[Shift+LevelThree]= level6;
+        level_name[Level1]= "Modifier";
+        level_name[Level2]= "Qwerty";
+        level_name[Level3]= "Base";
+        level_name[Level4]= "Shift";
+        level_name[level5]= "LevelThree";
+        level_name[level6]= "LevelThree+Shift";
+    };
+
+    type "DVQ_ALPHA_NUMERIC"{
+        modifiers= None+Shift+Lock+LevelThree+Control+Alt+Super;
+        map[None]= level3;
+        map[Shift]= level4;
+        map[Lock]= level4;
+        map[Shift+Lock]= level3;
+        map[LevelThree]= level5;
+        map[Shift+LevelThree]= level6;
+        map[LevelThree+Lock]= level5;
+        map[Shift+LevelThree+Lock]= level6;
+        level_name[Level1]= "Modifier";
+        level_name[Level2]= "Qwerty";
+        level_name[Level3]= "Base or Shift+Lock";
+        level_name[Level4]= "Shift or Lock";
+        level_name[level5]= "LevelThree or LevelThree+Lock";
+        level_name[level6]= "LevelThree+Shift or LevelThree+Shift+Lock";
+    };
+
+    type "DVQ_NUM_ALPHABETIC"{
+        modifiers= None+Shift+Lock+LevelThree+Control+Alt+Super;
+        map[None]= level3;
+        map[Shift]= level4;
+        map[Lock]= level3;
+        map[Shift+Lock]= level4;
+        map[LevelThree]= level5;
+        map[Shift+LevelThree]= level6;
+        map[LevelThree+Lock]= level6;
+        map[Shift+LevelThree+Lock]= level5;
+        level_name[Level1]= "Modifier";
+        level_name[Level2]= "Qwerty";
+        level_name[Level3]= "Base or Lock";
+        level_name[Level4]= "Shift or Shift+Lock";
+        level_name[level5]= "LevelThree or LevelThree+Shift+Lock";
+        level_name[level6]= "LevelThree+Shift or LevelThree+Lock";
+    };
+
+    type "DVQ_7LV_ALPHA_NUMERIC"{
+        modifiers= None+Shift+Lock+LevelThree+Control+Alt+Super;
+        map[None]= level3;
+        map[Shift]= level4;
+        map[Lock]= level4;
+        map[Shift+Lock]= level3;
+        map[LevelThree]= level5;
+        map[Shift+LevelThree]= level6;
+        map[LevelThree+Lock]= level7;
+        map[Shift+LevelThree+Lock]= level6;
+        level_name[Level1]= "Modifier";
+        level_name[Level2]= "Qwerty";
+        level_name[Level3]= "Base or Shift+Lock";
+        level_name[Level4]= "Shift or Lock";
+        level_name[level5]= "LevelThree";
+        level_name[level6]= "LevelThree+Shift or LevelThree+Shift+Lock";
+        level_name[level7]= "LevelThree+Lock";
+    };
+
+    type "DVQ_7LV_NUMERIC"{
+        modifiers= None+Shift+Lock+LevelThree+Control+Alt+Super;
+        map[None]= level3;
+        map[Shift]= level4;
+        map[Lock]= level3;
+        map[Shift+Lock]= level4;
+        map[LevelThree]= level5;
+        map[Shift+LevelThree]= level6;
+        map[LevelThree+Lock]= level7;
+        map[Shift+LevelThree+Lock]= level6;
+        level_name[Level1]= "Modifier";
+        level_name[Level2]= "Qwerty";
+        level_name[Level3]= "Base or Shift+Lock";
+        level_name[Level4]= "Shift or Lock";
+        level_name[level5]= "LevelThree";
+        level_name[level6]= "LevelThree+Shift or LevelThree+Shift+Lock";
+        level_name[level7]= "LevelThree+Lock";
     };
 };

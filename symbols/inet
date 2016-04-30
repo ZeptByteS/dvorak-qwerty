@@ -87,124 +87,114 @@ xkb_symbols "media_acpi_common" {
 // Evdev Standardized Keycodes
 partial alphanumeric_keys
 xkb_symbols "evdev" {
+
+// Preserve for Redirect to QWERTY keys
+    // key <HNGL>   {      [ Hangul                ]       };
+    // key <HJCV>   {      [ Hangul_Hanja          ]       };
+    // key <LNFD>   {      [ Linefeed              ]       };
+    // key <PROP>   {      [ SunProps              ]       };
+    // key <FRNT>   {      [ SunFront              ]       };
+    // key <I120>   {      [ ]       }; // KEY_MACRO
+    // key <I128>   {      [ XF86LaunchA           ]       };
+    // key <I147>   {      [ XF86MenuKB            ]       };
+    // key <I149>   {      [ ]       }; // KEY_SETUP
+    // key <I154>   {      [ ]       }; // KEY_DELETEFILE
+    // key <I155>   {      [ XF86Xfer              ]       };
+    // key <I159>   {      [ XF86DOS               ]       };
+    // key <I160>   {      [ XF86ScreenSaver       ]       };
+    // key <I161>   {      [ ]       }; // KEY_DIRECTION
+    // key <I162>   {      [ XF86RotateWindows     ]       };
+    // key <I168>   {      [ ]       }; // KEY_CLOSECD (opposite of eject)
+    // key <I170>   {      [ XF86Eject, XF86Eject  ]       };
+    // key <I174>   {      [ XF86AudioStop, XF86Eject ]    };
+    // key <I177>   {      [ XF86Phone             ]       };
+    // key <I178>   {      [ ]       }; // KEY_ISO
+    // key <I183>   {      [ ]       }; // KEY_MOVE
+    // key <I184>   {      [ ]       }; // KEY_EDIT
+    // key <I185>   {      [ XF86ScrollUp          ]       };
+    // key <I186>   {      [ XF86ScrollDown        ]       };
+    // key <I215>   {      [ XF86AudioPlay         ]       };
+    // key <I217>   {      [ ]       }; // KEY_BASSBOOST
+    // key <I219>   {      [ ]       }; // KEY_HP
+    // key <I220>   {      [ XF86WebCam            ]       };
+    // key <I221>   {      [ ]       }; // KEY_SOUND
+    // key <I222>   {      [ ]       }; // KEY_QUESTION
+    // key <I224>   {      [ XF86Messenger         ]       }; // KEY_CHAT
+    // key <I226>   {      [ XF86Go                ]       }; // KEY_CONNECT
+    // key <I227>   {      [ XF86Finance           ]       };
+    // key <I228>   {      [ XF86Game              ]       }; // KEY_SPORT
+    // key <I229>   {      [ XF86Shop              ]       };
+    // key <I230>   {      [ ]       }; // KEY_ALTERASE
+    // key <I231>   {      [ Cancel                ]       };
+    // key <I234>   {      [ XF86AudioMedia        ]       };
+    // key <I235>   {      [ XF86Display           ]       };
+    // key <I245>   {      [ XF86Bluetooth         ]       };
+    // key <I246>   {      [ XF86WLAN              ]       };
+    // key <I249>   {      [ ]       }; // KEY_VIDEO_NEXT  --  drive next video source
+    // key <I250>   {      [ ]       }; // KEY_VIDEO_PREV  --  drive previous video source
+    // key <I251>   {      [ ]       }; // KEY_BRIGHTNESS_CYCLE  --  bright up, max++ == min
+    // key <I252>   {      [ ]       }; // KEY_BRIGHTNESS_ZERO  --  brightness off
+    // key <I253>   {      [ ]       }; // KEY_DISPLAY_OFF  --  turn off display
+// End preserve
+
     key <MUTE>   {      [ XF86AudioMute         ]       };
     key <VOL->   {      [ XF86AudioLowerVolume  ]       };
     key <VOL+>   {      [ XF86AudioRaiseVolume  ]       };
     key <POWR>   {      [ XF86PowerOff          ]       };
     key <STOP>   {      [ Cancel                ]       };
     key <AGAI>   {      [ Redo                  ]       };
-    key <PROP>   {      [ SunProps              ]       };
     key <UNDO>   {      [ Undo                  ]       };
-    key <FRNT>   {      [ SunFront              ]       };
     key <COPY>   {      [ XF86Copy              ]       };
     key <OPEN>   {      [ XF86Open              ]       };
     key <PAST>   {      [ XF86Paste             ]       };
     key <FIND>   {      [ Find                  ]       };
     key <CUT>    {      [ XF86Cut               ]       };
     key <HELP>   {      [ Help                  ]       };
-    key <LNFD>   {      [ Linefeed              ]       };
-
-// Commented out because HZTG has same keycode as TLDE
-//    key <HZTG>   {      [ Zenkaku_Hankaku       ]       };
-
     key <HKTG>   {      [ Hiragana_Katakana     ]       };
     key <HENK>   {      [ Henkan                ]       };
     key <MUHE>   {      [ Muhenkan              ]       };
     key <KATA>   {      [ Katakana              ]       };
     key <HIRA>   {      [ Hiragana              ]       };
-    key <RO>     {      [ Romaji                ]       };
-
-    key <HNGL>   {      [ Hangul                ]       };
-    key <HJCV>   {      [ Hangul_Hanja          ]       };
     key <FK21>   {      [ XF86TouchpadToggle    ]       };
     key <FK22>   {      [ XF86TouchpadOn        ]       };
     key <FK23>   {      [ XF86TouchpadOff       ]       };
-
     key <FK20>   {      [ XF86AudioMicMute      ]       };
-
-    //Preserve for Redirect to QWERTY keys
-    // key <I120>   {      [ ]       }; // KEY_MACRO
-    // key <I126>   {      [ plusminus             ]       };
-    // key <I128>   {      [ XF86LaunchA           ]       };
-    // key <I147>   {      [ XF86MenuKB            ]       };
-    // key <I148>   {      [ XF86Calculator        ]       };
-    // key <I149>   {      [ ]       }; // KEY_SETUP
-    // key <I150>   {      [ XF86Sleep             ]       };
-    // key <I151>   {      [ XF86WakeUp            ]       };
-    // key <I152>   {      [ XF86Explorer          ]       };
-    // key <I153>   {      [ XF86Send              ]       };
-    // key <I154>   {      [ ]       }; // KEY_DELETEFILE
-    // key <I155>   {      [ XF86Xfer              ]       };
-    // key <I156>   {      [ XF86Launch1           ]       };
-    // key <I157>   {      [ XF86Launch2           ]       };
-    // key <I158>   {      [ XF86WWW               ]       };
-    // key <I159>   {      [ XF86DOS               ]       };
-    // key <I160>   {      [ XF86ScreenSaver       ]       };
-    // key <I161>   {      [ ]       }; // KEY_DIRECTION
-    // key <I162>   {      [ XF86RotateWindows     ]       };
-    // key <I163>   {      [ XF86Mail              ]       };
-    // key <I164>   {      [ XF86Favorites         ]       };
-    // key <I165>   {      [ XF86MyComputer        ]       };
-    // key <I166>   {      [ XF86Back              ]       };
-    // key <I167>   {      [ XF86Forward           ]       };
-    // key <I168>   {      [ ]       }; // KEY_CLOSECD (opposite of eject)
+    key <I126>   {      [ plusminus             ]       };
+    key <I148>   {      [ XF86Calculator        ]       };
+    key <I150>   {      [ XF86Sleep             ]       };
+    key <I151>   {      [ XF86WakeUp            ]       };
+    key <I152>   {      [ XF86Explorer          ]       };
+    key <I153>   {      [ XF86Send              ]       };
+    key <I158>   {      [ XF86WWW               ]       };
+    key <I163>   {      [ XF86Mail              ]       };
+    key <I164>   {      [ XF86Favorites         ]       };
+    key <I165>   {      [ XF86MyComputer        ]       };
+    key <I166>   {      [ XF86Back              ]       };
+    key <I167>   {      [ XF86Forward           ]       };
     key <I169>   {      [ XF86Eject             ]       };
-    key <I170>   {      [ XF86Eject, XF86Eject  ]       };
     key <I171>   {      [ XF86AudioNext         ]       };
     key <I172>   {      [ XF86AudioPlay, XF86AudioPause ] };
     key <I173>   {      [ XF86AudioPrev         ]       };
-    key <I174>   {      [ XF86AudioStop, XF86Eject ]    };
     key <I175>   {      [ XF86AudioRecord       ]       };
     key <I176>   {      [ XF86AudioRewind       ]       };
-    key <I177>   {      [ XF86Phone             ]       };
-    // key <I178>   {      [ ]       }; // KEY_ISO
-    // key <I179>   {      [ XF86Tools             ]       };
-    // key <I180>   {      [ XF86HomePage          ]       };
-    // key <I181>   {      [ XF86Reload           ]       };
-    // key <I182>   {      [ XF86Close             ]       };
-    // key <I183>   {      [ ]       }; // KEY_MOVE
-    // key <I184>   {      [ ]       }; // KEY_EDIT
-    // key <I185>   {      [ XF86ScrollUp          ]       };
-    // key <I186>   {      [ XF86ScrollDown        ]       };
-    // key <I187>   {      [ parenleft             ]       };
-    // key <I188>   {      [ parenright            ]       };
-    // key <I189>   {      [ XF86New               ]       };
-    // key <I190>   {      [ Redo                  ]       };
-    key <I192>   {      [ XF86LaunchA           ]       };
-    key <I193>   {      [ XF86LaunchC           ]       };
-    key <I194>   {      [ XF86LaunchD           ]       };
-    key <I195>   {      [ XF86LaunchE           ]       };
-    key <I196>   {      [ XF86LaunchF           ]       };
+    key <I179>   {      [ XF86Tools             ]       };
+    key <I180>   {      [ XF86HomePage          ]       };
+    key <I181>   {      [ XF86Reload            ]       };
+    key <I182>   {      [ XF86Close             ]       };
+    key <I187>   {      [ parenleft             ]       };
+    key <I188>   {      [ parenright            ]       };
+    key <I189>   {      [ XF86New               ]       };
+    key <I190>   {      [ Redo                  ]       };
     key <I208>   {      [ XF86AudioPlay         ]       };
     key <I209>   {      [ XF86AudioPause        ]       };
-    // key <I210>   {      [ XF86Launch3           ]       };
-    // key <I211>   {      [ XF86Launch4           ]       };
-    // key <I212>   {      [ XF86LaunchB           ]       };
-    // key <I213>   {      [ XF86Suspend           ]       };
+    key <I213>   {      [ XF86Suspend           ]       };
     key <I214>   {      [ XF86Close             ]       };
-    key <I215>   {      [ XF86AudioPlay         ]       };
     key <I216>   {      [ XF86AudioForward      ]       };
-//  key <I217>   {      [ ]       }; // KEY_BASSBOOST
     key <I218>   {      [ Print                 ]       };
-    //  key <I219>   {      [ ]       }; // KEY_HP
-    //  key <I220>   {      [ XF86WebCam            ]       };
-    //  key <I221>   {      [ ]       }; // KEY_SOUND
-    //  key <I222>   {      [ ]       }; // KEY_QUESTION
-    //  key <I223>   {      [ XF86Mail              ]       };
-    //End preserve
-
-    key <I224>   {      [ XF86Messenger         ]       }; // KEY_CHAT
+    key <I223>   {      [ XF86Mail              ]       };
     key <I225>   {      [ XF86Search            ]       };
-    key <I226>   {      [ XF86Go                ]       }; // KEY_CONNECT
-    key <I227>   {      [ XF86Finance           ]       };
-    key <I228>   {      [ XF86Game              ]       }; // KEY_SPORT
-    key <I229>   {      [ XF86Shop              ]       };
-//  key <I230>   {      [ ]       }; // KEY_ALTERASE
-    key <I231>   {      [ Cancel                ]       };
     key <I232>   {      [ XF86MonBrightnessDown ]       };
     key <I233>   {      [ XF86MonBrightnessUp   ]       };
-    key <I234>   {      [ XF86AudioMedia        ]       };
-    key <I235>   {      [ XF86Display           ]       };
     key <I236>   {      [ XF86KbdLightOnOff     ]       }; // KEY_KBDILLUMTOGGLE
     key <I237>   {      [ XF86KbdBrightnessDown ]       }; // KEY_KBDILLUMDOWN
     key <I238>   {      [ XF86KbdBrightnessUp   ]       }; // KEY_KBDILLUMUP
@@ -214,24 +204,17 @@ xkb_symbols "evdev" {
     key <I242>   {      [ XF86Save              ]       };
     key <I243>   {      [ XF86Documents         ]       };
     key <I244>   {      [ XF86Battery           ]       };
-    key <I245>   {      [ XF86Bluetooth         ]       };
-    key <I246>   {      [ XF86WLAN              ]       };
-//  key <I249>   {      [ ]       }; // KEY_VIDEO_NEXT  --  drive next video source
-//  key <I250>   {      [ ]       }; // KEY_VIDEO_PREV  --  drive previous video source
-//  key <I251>   {      [ ]       }; // KEY_BRIGHTNESS_CYCLE  --  bright up, max++ == min
-//  key <I252>   {      [ ]       }; // KEY_BRIGHTNESS_ZERO  --  brightness off
-//  key <I253>   {      [ ]       }; // KEY_DISPLAY_OFF  --  turn off display
-//  key <I254>   {      [ ]       }; // KEY_WIMAX
-    key <I255>   {      [ XF86Hibernate         ]       }; // KEY_HIBERNATE
-
-    key <FK13>   {      [ XF86Tools         ]       };
-    key <FK14>   {      [ XF86Launch5       ]       };
-    key <FK15>   {      [ XF86Launch6       ]       };
-    key <FK16>   {      [ XF86Launch7       ]       };
-    key <FK17>   {      [ XF86Launch8       ]       };
-    key <FK18>   {      [ XF86Launch9       ]       };
+    key <FK13>   {      [ XF86Tools             ]       };
+    key <I156>   {      [ XF86Launch1           ]       };
+    key <I157>   {      [ XF86Launch2           ]       };
+    key <I210>   {      [ XF86Launch3           ]       };
+    key <I211>   {      [ XF86Launch4           ]       };
+    key <FK14>   {      [ XF86Launch5           ]       };
+    key <FK15>   {      [ XF86Launch6           ]       };
+    key <FK16>   {      [ XF86Launch7           ]       };
+    key <FK17>   {      [ XF86Launch8           ]       };
+    key <FK18>   {      [ XF86Launch9           ]       };
 };
-
 
 // Acer AirKey V
 partial alphanumeric_keys
