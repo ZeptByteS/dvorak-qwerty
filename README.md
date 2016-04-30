@@ -1,7 +1,7 @@
 Dvorak-Qwerty XKB configuration files for Linux
 ------
 
-![](https://github.com/ZeptByteS/dvorak-qwerty/blob/develop/dvorak-qwerty.png)
+![](https://github.com/ZeptByteS/dvorak-qwerty/blob/master/dvorak-qwerty.png)
 
 These keymaps use the first level for redirection to different scan-codes in inet "evdev" section that aren't used in ordinary keyboards. However, if a keyboard has some media keys that use these scan-codes, you will have to change the redirection of the conflicting scan-codes in "symbols/us" and uncomment them in "symbols/inet".
 
