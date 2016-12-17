@@ -11,7 +11,7 @@ Since this layout won't use RedirectKeys when press modifier keys, I think you c
 
 But, there is one problem. Since 'a' and 'm' is placed same position in Dvorak and Qwerty, it can't use as four or six levels. eg, when XKB see the symbols like [a,A,a,A], XKB automatically translated it to [a,A] and set it's type to "ALPHABETIC". So, while Capslock is on, press "aoeui", XKB will input "Aoeui". 
 
-To avoid this problem, I haven't find a way except use RiderectKeys. And because of the RedirectKeys, some programs may be won't recognises 'a' and 'm' keys except use these keys with modifiers. In my case, the Keepass2 that run on the mono runtime, I can't input 'a' and 'm'  when Capslock is on.
+To avoid this problem, I haven't find a way except use RiderectKeys. And because of the RedirectKeys, some programs may be won't recognises 'a' and 'm' keys except use these keys with modifiers. In my case, the KeePass2 that run on the mono runtime, I can't input 'a' and 'm'  when Capslock is on.
 
 You can input 'a' and 'm' with ibus-mozc or standard Dvorak layouts if your favorite programs don't recognises these keys.
 
