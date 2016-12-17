@@ -1,7 +1,7 @@
 More simple way to use dvorak-qwerty on Linux 
 ------
 
-![]()
+![](https://github.com/ZeptByteS/dvorak-qwerty/blob/master/dvorak-qwerty.png)
 
 
 In this layout, you can input dvorak layout symbols while capslock is on. Turn it off to switch back to qwerty layout. Any key will work as Qwerty always when pressed with Control, Alt or Super regardless of the state of the capslock.
