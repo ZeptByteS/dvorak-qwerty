@@ -15,6 +15,16 @@ To avoid this problem, I haven't find a way except use RiderectKeys. And because
 
 You can input 'a' and 'm' with ibus-mozc or standard Dvorak layouts if your favorite programs don't recognises these keys.
 
+このレイアウトでは、CapslockがオンのときにDvorakレイアウトシンボルを入力できます。 Qwertyのレイアウトに戻すにはそれをオフにします。 Capslockの状態にかかわらず、Control、Alt、またはSuperで押された場合、どのキーも常にQwertyとして機能します。そのため、大文字の入力にはCaps Lockを使用できません。
+
+私は数か月前に[RedirectKeys]を使ってQwertyホットキーを使用する設定ファイルを作成しました。しかし、RedirectKeys関数のためにいくつかのアプリケーションでいくつかの問題がありました。このレイアウトは修飾キーを押してもRedirectKeysを使用しないので、これらの修飾キーはすべてのプログラムでうまく使えると思います。
+
+しかし、1つの問題があります。 DvorakとQwertyでは 'a'と 'm'が同じ位置に配置されているため、4つまたは6つのレベルとして使用することはできません。たとえば、XKBが[a、A、a、A]のようなシンボルを参照すると、XKBはそれを自動的に[a、A]に変換し、そのタイプを "ALPHABETIC"に設定します。だから、Capslockがオンのときに "aoeui"を押すと、XKBは "Aoeui"を入力します。
+
+この問題を避けるために、私はRiderectKeysを使う以外の方法は見つけていません。また、RedirectKeysのために、一部のプログラムでは、修飾キーでこれらのキーを使用する以外は、「a」キーと「m」キーを認識しないことがあります。私の場合、モノラルランタイムで動作するKeePass2は、Capslockがオンのときに「a」と「m」を入力できません。
+
+お気に入りのプログラムがこれらのキーを認識しない場合は、ibus-mozcまたは標準のDvorakレイアウトで 'a'と 'm'を入力できます。
+
 Installation
 ------
 
