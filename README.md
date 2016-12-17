@@ -1,4 +1,4 @@
-More simple way to use dvorak-qwerty on Linux 
+More simple way to use dvorak-qwerty on Linux (Ubuntu Gnome 16.04 LTS)
 ------
 
 ![](https://github.com/ZeptByteS/dvorak-qwerty/blob/master/dvorak-qwerty.png)
