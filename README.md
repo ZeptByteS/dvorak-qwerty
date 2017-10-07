@@ -1,12 +1,12 @@
 More simple way to use dvorak-qwerty on Linux (Ubuntu Gnome 16.04 LTS)
 ------
 
-![](https://github.com/ZeptByteS/dvorak-qwerty/blob/master/dvorak-qwerty.png)
+![](https://github.com/ZeptByteS/dvorak-qwerty/blob/ScrollLock_to_switch/scrolllock.png)
 
 
-In this layout, you can input Dvorak layout symbols while Capslock is on. And turn it off to switch back to Qwerty layout.  Any key will always work as Qwerty when pressed with Control, Alt or Super regardless of the state of the Capslock. For that, Caps lock can't be used for input uppercase.  
+In this layout, you can input Dvorak layout symbols while ScrollLock is on. And turn it off to switch back to Qwerty layout.  Any key will always work as Qwerty when pressed with Control, Alt or Super regardless of the state of the ScrollLock.
 
-このレイアウトでは、CapslockがオンのときにDvorakレイアウトシンボルを入力できます。 Qwertyのレイアウトに戻すにはそれをオフにします。 Capslockの状態にかかわらず、Control、Alt、またはSuperと押された場合、どのキーも常にQwertyとして機能します。そのため、大文字の入力にはCaps Lockを使用できません。
+このレイアウトでは、ScrollLockがオンのときにDvorakレイアウトシンボルを入力できます。 Qwertyのレイアウトに戻すにはそれをオフにします。 ScrollLockの状態にかかわらず、Control、Alt、またはSuperと押された場合、どのキーも常にQwertyとして機能します。
 
 Installation
 ------
