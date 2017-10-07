@@ -2,23 +2,31 @@ partial default xkb_types "default" {
     virtual_modifiers Meta,LevelThree,Alt,Super;
 
     type "DVORAK_QWERTY" {
-        modifiers = None+Shift+Lock+Control+Alt+Super+LevelThree;
-        map[None] = level1;
-        map[Shift] = level2;
-        map[Shift+Control] = Level2;
-        map[Shift+Alt] = Level2;
-        map[Shift+Super] = Level2;
-        map[Lock] = level3;
-        map[Shift+Lock] = level4;
-        map[LevelThree] = level5;
-        map[LevelThree+Shift] = level6;
+        modifiers = None+Shift+Lock+Control+Alt+Super+LevelThree+Mod3;
+
+        map[None]             = level1;
+        map[Shift]            = level2;
+        map[Shift+Control]    = Level2;
+        map[Shift+Alt]        = Level2;
+        map[Shift+Super]      = Level2;
+
+        map[Mod3]             = level3;
+        map[Shift+Mod3]       = level4;
+
+        map[Shift+Lock]       = level5;
+        map[Lock]             = level6;
+
+        map[Shift+Lock+Mod3]  = level7;
+	map[Lock+Mod3]        = level8;
 
         level_name[Level1]= "Modifiers";
         level_name[Level2]= "Modifiers+Shift";
-        level_name[Level3]= "Base";
-        level_name[Level4]= "Shift";
-        level_name[Level5]= "LevelThree";
-        level_name[Level6]= "LevelThree+Shift";
+        level_name[Level3]= "Dvorak";
+        level_name[Level4]= "Dvorak+Shift";
+        level_name[Level5]= "Caps+Shift";
+        level_name[Level6]= "Caps";
+        level_name[Level7]= "Dvorak+Caps+Shift";
+        level_name[Level8]= "Dvorak+Caps";
     };
 
 };
