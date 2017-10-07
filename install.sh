@@ -18,6 +18,6 @@ DIRECTORY_OWNER=$(namei -o $PWD | tail -n 1 | awk '{if ($2) print $2}')
 chown $DIRECTORY_OWNER -R $NAME
 
 echo "Copying Dvorak-Qwerty configuration"
-cp -R ./types ./symbols/ ./rules/  $CONF
+cp -R ./types ./symbols/ ./rules/ ./compat/ $CONF
 
 exit 0
