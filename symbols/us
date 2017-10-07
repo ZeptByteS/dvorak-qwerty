@@ -599,11 +599,13 @@ xkb_symbols "dvp" {
     include "level3(ralt_switch)"
 };
 
-partial alphanumeric_keys
+partial alphanumeric_keys modifier_keys
 xkb_symbols "dvorak-qwerty" {
 
     name[Group1]= "English (Dvorak-Qwerty)";
 
+    key <RWIN> {	[ Scroll_Lock ] };
+    modifier_map Mod3   { Scroll_Lock };
     key <TLDE> { [ grave, asciitilde, dead_grave, dead_tilde  ] };
     key <AE01> { [ 1, exclam ] };
     key <AE02> { [ 2, at ] };
@@ -617,49 +619,51 @@ xkb_symbols "dvorak-qwerty" {
     key <AE10> { [ 0, parenright ] };
     key <BKSL> { [ backslash, bar ] };
     key.type[group1]="DVORAK_QWERTY";
-    key <AC01> { [ a, A ,a, A],
-    actions[Group1]= [ NoAction(), NoAction(),
-                       RedirectKey(key=<AC01>, clearmods=Lock),
-                       RedirectKey(key=<AC01>, clearmods=Lock) ]
-    };
-    key <AB07> { [ m, M ,m, M],
-    actions[Group1]= [ NoAction(), NoAction(),
-                       RedirectKey(key=<AB07>, clearmods=Lock),
-                       RedirectKey(key=<AB07>, clearmods=Lock) ]
-    };
-    key <AE11> { [ minus, underscore, bracketleft, braceleft ] };
-    key <AE12> { [ equal, plus, bracketright, braceright, dead_tilde] };
-    key <AD01> { [ q, Q, apostrophe, quotedbl, dead_acute, dead_diaeresis ] };
-    key <AD02> { [ w, W, comma, less, dead_cedilla, dead_caron ] };
-    key <AD03> { [ e, E, period, greater, dead_abovedot, periodcentered ] };
-    key <AD04> { [ r, R, p, P ] };
-    key <AD05> { [ t, T, y, Y ] };
-    key <AD06> { [ y, Y, f, F ] };
-    key <AD07> { [ u, U, g, G ] };
-    key <AD08> { [ i, I, c, C ] };
-    key <AD09> { [ o, O, r, R ] };
-    key <AD10> { [ p, P, l, L ] };
-    key <AD11> { [ bracketleft, braceleft, slash, question ] };
-    key <AD12> { [ bracketright, braceright,equal, plus ] };
-    key <AC02> { [ s, S, o, O ] };
-    key <AC03> { [ d, D, e, E ] };
-    key <AC04> { [ f, F, u, U ] };
-    key <AC05> { [ g, G, i, I ] };
-    key <AC06> { [ h, H, d, D ] };
-    key <AC07> { [ j, J, h, H ] };
-    key <AC08> { [ k, K, t, T ] };
-    key <AC09> { [ l, L, n, N ] };
-    key <AC10> { [ semicolon, colon, s, S ] };
-    key <AC11> { [ apostrophe, quotedbl, minus, underscore ] };
-    key <AB01> { [ z, Z,semicolon, colon, dead_ogonek, dead_doubleacute ] };
-    key <AB02> { [ x, X, q, Q ] };
-    key <AB03> { [ c, C, j, J ] };
-    key <AB04> { [ v, V, k, K ] };
-    key <AB05> { [ b, B, x, X ] };
-    key <AB06> { [ n, N, b, B ] };
-    key <AB08> { [ comma, less, w, W ] };
-    key <AB09> { [ period, greater, v, V ] };
-    key <AB10> { [ slash, question, z, Z ] };
+    //key <AC01> { [ a, A ,a, A],
+    //actions[Group1]= [ NoAction(), NoAction(),
+    //                   RedirectKey(key=<AC01>, clearmods=Lock),
+    //                   RedirectKey(key=<AC01>, clearmods=Lock) ]
+    //};
+    //key <AB07> { [ m, M ,m, M],
+    //actions[Group1]= [ NoAction(), NoAction(),
+    //                   RedirectKey(key=<AB07>, clearmods=Lock),
+    //                   RedirectKey(key=<AB07>, clearmods=Lock) ]
+    //};
+    key <AE11> { [ minus, underscore, bracketleft, braceleft, underscore, minus, braceleft, bracketleft ] };
+    key <AE12> { [ equal, plus, bracketright, braceright, plus, equal, braceright, bracketright] };
+    key <AD01> { [ q, Q, apostrophe, quotedbl, q, Q, quotedbl, apostrophe ] };
+    key <AD02> { [ w, W, comma, less, w, W, less, comma ] };
+    key <AD03> { [ e, E, period, greater, e, E, greater, period ] };
+    key <AD04> { [ r, R, p, P, r, R, p, P ] };
+    key <AD05> { [ t, T, y, Y, t, T, y, Y ] };
+    key <AD06> { [ y, Y, f, F, y, Y, f, F ] };
+    key <AD07> { [ u, U, g, G, u, U, g, G ] };
+    key <AD08> { [ i, I, c, C, i, I, c, C ] };
+    key <AD09> { [ o, O, r, R, o, O, r, R ] };
+    key <AD10> { [ p, P, l, L, p, P, l, L ] };
+    key <AD11> { [ bracketleft, braceleft, slash, question, braceleft, bracketleft, question, slash ] };
+    key <AD12> { [ bracketright, braceright, equal, plus, braceright, bracketright, plus, equal ] };
+    key <AC01> { [ a, A ,a, A, a, A ,a, A ] };
+    key <AC02> { [ s, S, o, O, s, S, o, O ] };
+    key <AC03> { [ d, D, e, E, d, D, e, E ] };
+    key <AC04> { [ f, F, u, U, f, F, u, U ] };
+    key <AC05> { [ g, G, i, I, g, G, i, I ] };
+    key <AC06> { [ h, H, d, D, h, H, d, D ] };
+    key <AC07> { [ j, J, h, H, j, J, h, H ] };
+    key <AC08> { [ k, K, t, T, k, K, t, T ] };
+    key <AC09> { [ l, L, n, N, l, L, n, N ] };
+    key <AC10> { [ semicolon, colon, s, S, colon, semicolon, s, S ] };
+    key <AC11> { [ apostrophe, quotedbl, minus, underscore, quotedbl, apostrophe, underscore, minus ] };
+    key <AB01> { [ z, Z, semicolon, colon, z, Z, colon, semicolon ] };
+    key <AB02> { [ x, X, q, Q, x, X, q, Q ] };
+    key <AB03> { [ c, C, j, J, c, C, j, J ] };
+    key <AB04> { [ v, V, k, K, v, V, k, K ] };
+    key <AB05> { [ b, B, x, X, b, B, x, X ] };
+    key <AB06> { [ n, N, b, B, n, N, b, B ] };
+    key <AB07> { [ m, M ,m, M, m, M ,m, M ] };
+    key <AB08> { [ comma, less, w, W, less, comma, w, W ] };
+    key <AB09> { [ period, greater, v, V, greater, period, v, V ] };
+    key <AB10> { [ slash, question, z, Z, question, slash, z, Z ] };
 
 };
 
