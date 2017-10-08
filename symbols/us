@@ -617,12 +617,12 @@ xkb_symbols "dvorak-qwerty" {
     key <AE10> { [ 0, parenright ] };
     key <BKSL> { [ backslash, bar ] };
     key.type[group1]="DVORAK_QWERTY";
-    key <AC01> { [ a, A ,a, A],
+    key <AC01> { [ a, A, a, A],
     actions[Group1]= [ NoAction(), NoAction(),
                        RedirectKey(key=<AC01>, clearmods=Lock),
                        RedirectKey(key=<AC01>, clearmods=Lock) ]
     };
-    key <AB07> { [ m, M ,m, M],
+    key <AB07> { [ m, M, m, M],
     actions[Group1]= [ NoAction(), NoAction(),
                        RedirectKey(key=<AB07>, clearmods=Lock),
                        RedirectKey(key=<AB07>, clearmods=Lock) ]
